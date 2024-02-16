@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Fixel Display", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --black: #0f1019;
+  --white: #fafafa;
+  --grey-more-light: #e0e0e0;
+  --orange-dark: #de4f12;
+  --orange-light: #ef6c35;
+  --purple: #423063;
+  --navy: #1d2a36;
+  --green: #035b57;
+  --grey-dark: #808080;
+  --grey-light: #c4c4c4;
+}/*# sourceMappingURL=main.css.map */
