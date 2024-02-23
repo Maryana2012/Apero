@@ -2,11 +2,18 @@ body{
     font-family: 'Fixel Display', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 140%;
+    letter-spacing: 0.05em;
     color: var(--black);
+    margin: 0;
 }
 
 .container{
-    width: 1440px;
-   
+   width: 1440px;
+   align-items: center;
+   margin: 0 auto;
+}
+
+h1{
+    display: none;
 }
