@@ -1,35 +1,196 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apero</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-    <header class="header">
-       <a href="./index.html" class="link">logo apero</a>
-       <nav class="navigation">
-        <ul class="nav-list">
-            <li class="list"><a href="./index.html" class="link">Головна</a></li>
-            <li class="list"><a href="./about.html" class="link">Про нас</a></li>
-            <li class="list"><a href="./products.html" class="link">Продукція</a></li>
-            <li class="list"><a href="./partner.html" class="link">Партнерам</a></li>
-            <li class="list"><a href="./contacts.html" class="link">Контакти</a></li>
-        </ul>
-        <button type="button">Отримати пропозицію</button>
-       </nav>
-    </header>
-    <main>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/main.min.css">
+   
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header">
+        <a href="./index.html" class="link"> 
+          <svg class="logo" width="80" height="24">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="navigation">
+         <ul class="nav-list">
+             <li class="list"><a href="./index.html" class="link nav-link">Головна</a></li>
+             <li class="list"><a href="./about.html" class="link nav-link">Про нас</a></li>
+             <li class="list"><a href="./products.html" class="link nav-link">Продукція</a></li>
+             <li class="list"><a href="./partner.html" class="link nav-link">Партнерам</a></li>
+             <li class="list"><a href="./contacts.html" class="link nav-link">Контакти</a></li>
+         </ul>
+         <button type="button" class="header-button">Отримати пропозицію</button>
+        </nav>
+
+      </div>
+   </header>
+
+   <main>
+    <h1>Кукурудзяні палички та снеки</h1>
+     <section class="hero-section-container">
+
+       <div class="swiper mySwiper">
+  
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide hero-section-orange">
+            <div class="hero-text-container">
+              <h2 class="hero-title">чиста радість</h2>
+              <h3 class="hero-subtitle">смаку та енергії</h3>
+              <p class="hero-text">Попкорн АПЕРО не залишить байдужим <br/> навіть найвибагливіших гурманів</p>
+              <a href="./products.html" class="hero-link link">Переглянути асортимент
+                <svg width="40" height="40" class="hero-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="image-container">
+              <div class="image-gradient-orange"></div>
+              <img src="./images/popcorn_orange.png" alt="Orange popcorn" width="413" height="595" class="hero-image">
+            </div>
+          </div>
+          
+          <div class="swiper-slide hero-section-purple">
+            <div class="hero-text-container">
+              <h2 class="hero-title">проведіть миті</h2>
+              <h3 class="hero-subtitle">що наповнюють</h3>
+              <p class="hero-text">Попкорн АПЕРО не залишить байдужим <br/> навіть найвибагливіших гурманів</p>
+              <a href="./products.html" class="hero-link link">Переглянути асортимент
+                <svg width="40" height="40" class="hero-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="image-container">
+              <div class="image-gradient-violet"></div>
+              <img src="./images/popcorn_violet.png" alt="Violet popcorn" width="413" height="595" class="hero-image">
+            </div>
+          </div>
+        
+          <div class="swiper-slide hero-section-navy">
+            <div class="hero-text-container">
+              <h2 class="hero-title">отримайте смак</h2>
+              <h3 class="hero-subtitle">солоних пригод</h3>
+              <p class="hero-text">Попкорн АПЕРО не залишить байдужим <br/> навіть найвибагливіших гурманів</p>
+              <a href="./products.html" class="hero-link link">Переглянути асортимент
+                <svg width="40" height="40" class="hero-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="image-container">
+              <div class="image-gradient-navy">  </div>
+              <img src="./images/popcorn_navy.png" alt="Navy popcorn" width="413" height="595" class="hero-image">
+            </div>
+          </div>
+  
+          <div class="swiper-slide hero-section-green">
+            <div class="hero-text-container">
+              <h2 class="hero-title">відкрийте світ</h2>
+              <h3 class="hero-subtitle">нових вражень</h3>
+              <p class="hero-text">Попкорн АПЕРО не залишить байдужим <br/> навіть найвибагливіших гурманів</p>
+              <a href="./products.html" class="hero-link link">Переглянути асортимент
+                <svg width="40" height="40" class="hero-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="image-container"> 
+              <div class="image-gradient-green"></div>
+              <img src="./images/popcorn_green.png" alt="Green popcorn" width="413" height="595" class="hero-image">  
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+     </section>
+     
+     <section class="collection-container">
+      <h2 class="collection-title">смакуйте інше у нашій колекції</h2>
+      <p class="collection-text-main">У нас Ви знайдете дивовижне різноманіття снеків, призначених для кожного гурмана</p>
       
-    </main>
-    <footer></footer>
-</body>
+      <div class="collection-container-snax">
+         <img src="./images/shacks_1.png" alt="snax backon" class="image-snax-bacon">
+         <div class="collection-text-container-snax">
+           <h3 class="collection-subtitle">Снеки в асортименті</h3>
+           <p class="collection-text text-snax">Лінійка картопляно-кукурудзяних чіпсів з різними </br> смаками - це гастрономічна насолода з кожним </br> хрустом. Тільки відбірна сировина, 0% </br> консервантів та натуральні спеції</p>
+           <a href="#" class="collection-link">Дізнатися більше</a>
+           <div class="collection-link-underline"></div>
+         </div>
+         <img src="./images/snacks_2.png" alt="Snax with onion" class="image-snax-onion">
+      </div>
+      
+      <div class="collection-container-group">
+        <div class="collection-container-orange">
+          <div class="collection-text-container-orange">
+            <h3 class="collection-subtitle-group">Кукурудзяні палички</h3>
+            <p class="collection-text text-orange">Дві лінійки смачних кукурудзяних </br>паличок: класичні з ексклюзивним</br> апельсиновим смаком та кукурудзяні </br>палички з сюрпризом всередині.</p>
+            <a href="#" class="collection-link">Дізнатися більше</a>
+            <div class=""></div>
+          </div>
+          <img src="./images/surprice.png" alt="snax with surprise" class="image-surprise">
+        </div>
+     
+        <div class="collection-container-orange pink">
+          <div class="collection-text-container-orange">
+            <h3 class="collection-subtitle-group">Кукурудзяні подушечки</h3>
+            <p class="collection-text text-orange">Солодкі трубочки та подушечки з </br> начинкою - 100% натуральні</br> інгредієнти. Стильна пачка,</br> європейська якість!</p>
+            <a href="#" class="collection-link">Дізнатися більше</a>
+            <div class=""></div>
+          </div>
+          <img src="./images/twin.png" alt="x-twin" class="image-surprise">
+        </div>
+      </div>
+
+      <div class="collection-container-snax popcorn-container">
+        <img src="./images/popcorn_violet2.png" alt="popcorn with caramel" class="popcorn-caramel">
+        <div class="collection-text-container-snax">
+          <h3 class="collection-subtitle">Попкорн</h3>
+          <p class="collection-text text-snax">Не залишить байдужим навіть найвибагливіших </br> гурманів. Насолода гарантована, так як для </br> виробництва використовуються найкращі </br> кукурудзяні зерна</p>
+          <a href="#" class="collection-link">Дізнатися більше</a>
+          <div class="collection-link-underline"></div>
+        </div>
+        <img src="./images/popcorn_2.png" alt="popcor ready" class="popcorn-ready">
+     </div>
+     </section>
+
+
+     <section class="advantages-container">
+      <h2 class="collection-title">переваги співпраці з нами</h2>
+      <p class="collection-text-main">Для торгових представників, оптових клієнтів та дистриб'юторів</p>
+         <ul>
+          <li class="list">
+            <div class="advantages-list">
+              <svg  width="40" height="40">
+<symbol id="icon-like" viewBox="0 0 32 32">
+                <use href="./images/ant-like.svg"></use>
+              </svg>
+            </div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+         </ul>
+     </section>
+   </main>
+   <footer></footer>
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script type="module" src="./js/swiper.js"></script>
+
+  </body>
 </html>
