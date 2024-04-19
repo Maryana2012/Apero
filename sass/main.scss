@@ -1,1 +1,32 @@
-@import './base.scss';
+@import './base/reset.scss';
+@import './base/common.scss';
+
+@import './utils/variables.scss';
+
+@import './layouts/header.scss';
+@import './layouts/hero-section.scss';
+@import './layouts/section-collection.scss';
+@import './layouts/section-advantages.scss';
+@import './layouts/section-statistic.scss';
+@import './layouts/section-partners.scss';
+@import './layouts/section-question.scss';
+
+
+@import './layouts/about-hero-section.scss';
+@import './layouts/about-statistic-section.scss';
+@import './layouts/about-production-section.scss';
+
+@import './layouts/about-history-section';
+@import './layouts/about-description-section';
+@import './layouts/about-sticks-section.scss';
+@import './layouts/about-product-section.scss';
+
+@import './layouts/products-hero-section';
+@import './layouts/product-section-subhero';
+@import './layouts/product-section-list';
+@import './layouts/product-section-partners.scss';
+
+@import './layouts/footer.scss';
+
+@import './layouts/partners-hero-section.scss';
+@import './layouts/contacts.scss';
