@@ -15,17 +15,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/fonts/fonts.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
    
   </head>
   <body>
-    <header class="header-container">
-      <div class="header">
+   
+      <header class="header">
         <a href="./index.html" class="link"> 
           <svg class="logo" width="80" height="24">
             <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          <svg class="logo__fixed" width="80" height="24">
+            <use href="./images/symbol-defs.svg#icon-logo-black"></use>
           </svg>
         </a>
         <nav class="navigation">
@@ -37,9 +40,7 @@
              <li class="list"><a href="./contacts.html" class="link nav__link text">Контакти</a></li>
          </ul>
          <button type="button" class="header__button">Отримати пропозицію</button>
-        </nav>
-
-      </div>
+        </nav>   
    </header>
 
    <main>
@@ -466,5 +467,6 @@
    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
    <script type="module" src="./js/slick.js"></script>
    <script type="module" src="./js/header-active-page.js"></script>
+   <script type="module" src="./js/fixed-header.js"></script>
   </body>
 </html>
