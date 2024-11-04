@@ -38,6 +38,14 @@
     // font-weight: 400;
     color: var(--white);
 }
+.nav__link:hover,
+.nav__link:focus{
+    // font-family: 'Fixel Display', sans-serif;
+    // font-weight: 500;
+    // font-size: 20px;
+    // line-height: 140%; 
+    color: var(--grey-more-light);
+}
 .header__button{
     display: flex;
     border: none;
@@ -52,6 +60,10 @@
     color: var(--black);
     margin-left: 32px;
 }
+// .header__button:hover,
+// .header__button:focus{
+//     cursor: pointer;
+// }
 
 .header__second{
     background-color: var(--white);

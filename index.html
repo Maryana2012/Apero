@@ -39,7 +39,7 @@
              <li class="list"><a href="./partner.html" class="link nav__link text">Партнерам</a></li>
              <li class="list"><a href="./contacts.html" class="link nav__link text">Контакти</a></li>
          </ul>
-         <button type="button" class="header__button">Отримати пропозицію</button>
+         <button type="button" class="header__button button__form" data-modal-open>Отримати пропозицію</button>
         </nav>   
    </header>
 
@@ -229,7 +229,7 @@
                 <p class="text">Ми використовуємо індивідуальний підхід до кожного нашого клієнта</p>
             </li>
            </ul>
-           <button type="button" class="button advantage__button">Отримати пропозицію
+           <button type="button" class="button advantage__button" data-modal-open>Отримати пропозицію
             <svg  width="40" height="40" class="button__image">
               <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
             </svg>
@@ -451,15 +451,45 @@
         </div>
       </div>
 
-      <ul class="footer__conditions-item">
+      <!-- <ul class="footer__conditions-item">
         <li class="list"><a class="link text grey footer__conditions " href="">Політика конфіденційності</a></li>
         <li class="list"><a class="link text grey footer__conditions" href="">Договір оферти</a></li>
         <li class="list"><a class="link text grey footer__conditions" href="">Умови надання послуг</a></li>
-      </ul>
+      </ul> -->
 
     </div>
 
   </footer>
+
+  <!-- modal -->
+
+  <div class="backdrop is-hidden" data-modal>
+     <div class="modal">
+      <div class="modal__container">
+
+        <button class="button__close" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+         </button>
+        <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
+          <h2 class="title question__title">маєте запитання чи </br>пропозиції?</h2>
+          <h3 class="subtitle question__subtitle">Заповніть заявку і ми зв’яжемось з Вами найближчим часом</h3>
+           <div class="question__form-container">
+             <input class="question__input text black" type="text" name="name" id="name" placeholder="Ваше ім'я">
+             <input class="question__input text black" type="email" name="email" id="email" placeholder="Ваш email">
+             <input class="question__input text black" type="tel" name="tel" id="tel" placeholder="Номер телефону">
+             <input class="question__input text black" type="text" name="company" id="company" placeholder="Назва компанії">
+             <textarea class="question__textarea text black" name="comment" id="comment" cols="30" rows="10" placeholder="Напишіть щось"></textarea>
+           </div>
+           <button class="button question__button" type="submit">Відправити заявку</button>
+          
+           
+         </form>
+      </div>
+
+     </div>
+  </div>
    
    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
    <!-- <script type="module" src="./js/swiper.js"></script> -->
@@ -468,5 +498,6 @@
    <script type="module" src="./js/slick.js"></script>
    <script type="module" src="./js/header-active-page.js"></script>
    <script type="module" src="./js/fixed-header.js"></script>
+   <script type="module" src="./js/button-form.js"></script>
   </body>
 </html>
