@@ -39,7 +39,7 @@
              <li class="list"><a href="./partner.html" class="link nav__link text">Партнерам</a></li>
              <li class="list"><a href="./contacts.html" class="link nav__link text">Контакти</a></li>
          </ul>
-         <button type="button" class="header__button button__form" data-modal-open>Отримати пропозицію</button>
+         <button type="button" class="header__button button__form modal-open">Отримати пропозицію</button>
         </nav>   
    </header>
 
@@ -229,7 +229,7 @@
                 <p class="text">Ми використовуємо індивідуальний підхід до кожного нашого клієнта</p>
             </li>
            </ul>
-           <button type="button" class="button advantage__button" data-modal-open>Отримати пропозицію
+           <button type="button" class="button advantage__button modal-open">Отримати пропозицію
             <svg  width="40" height="40" class="button__image">
               <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
             </svg>
@@ -381,7 +381,8 @@
     <section class="container container__blue">
       <div class="question__container">
         <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
-        <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> //цей сервіс для відправки заявок, потрібно переєструвати на електронну адресу когось із отримувачів Аперо
+        <!-- //цей сервіс для відправки заявок, потрібно переєструвати на електронну адресу когось із отримувачів Аперо -->
+        <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
          <h2 class="title question__title">маєте запитання чи </br>пропозиції?</h2>
          <h3 class="subtitle question__subtitle">Заповніть заявку і ми зв’яжемось з Вами найближчим часом</h3>
           <div class="question__form-container">
@@ -447,7 +448,7 @@
         <div class="footer__information-item">
           <p class="subtitle white footer__question-subtitle">Маєте запитання чи пропозиції?</p>
           <p class="text white">Заповніть заявку і ми зв’яжемось з Вами найближчим часом</p>
-          <button class="button footer__button">Заповнити заявку</button>
+          <button class="button footer__button modal-open">Заповнити заявку</button>
         </div>
       </div>
 
@@ -467,7 +468,7 @@
      <div class="modal">
       <div class="modal__container">
 
-        <button class="button__close" data-modal-close>
+        <button class="button__close modal-close" data-modal-close>
           <svg width="30" height="30">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -482,7 +483,7 @@
              <input class="question__input text black" type="text" name="company" id="company" placeholder="Назва компанії">
              <textarea class="question__textarea text black" name="comment" id="comment" cols="30" rows="10" placeholder="Напишіть щось"></textarea>
            </div>
-           <button class="button question__button" type="submit">Відправити заявку</button>
+           <button class="button question__button"  type="submit">Відправити заявку</button>
           
            
          </form>
