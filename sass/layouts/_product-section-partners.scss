@@ -9,12 +9,18 @@
 .partners__subtitle{
     color: var(--white);
 }
-.partners__link{
-    margin: 0 auto;
-}
+// .partners__link{
+//     margin: 0 auto;
+// }
 .images__container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 48px;
+}
+.partners__button{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 243px;
 }

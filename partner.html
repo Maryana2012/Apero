@@ -34,7 +34,7 @@
            <li class="list"><a href="./partner.html" class="link nav__link  nav__link-second text">Партнерам</a></li>
            <li class="list"><a href="./contacts.html" class="link nav__link nav__link-second  text">Контакти</a></li>
        </ul>
-       <button type="button" class="header__button header__button-second">Отримати пропозицію</button>
+       <button type="button" class="header__button header__button-second modal-open">Отримати пропозицію</button>
       </nav>
 
     </div>
@@ -87,11 +87,11 @@
     <div class="partner__container">
       <h2 class="title partners__title">Станьте нашим партнером сьогодні!</h2>
       <h3 class="subtitle partners__subtitle">Якщо Ви маєте запитання чи пропозиції - </br>заповніть заявку і ми звяжемось з Вами найближчим часом</h3>
-      <a href="./partner.html" class="hero__link about__hero__link link partners__link">Стати партнером
+      <button type="button" class="button button__form partners__button modal-open">Стати партнером  
         <svg width="40" height="40" class="hero-svg">
           <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
         </svg>
-      </a>
+      </button>
       <div class="images__container">
         <img src="https://res.cloudinary.com/ddtdtthqh/apero/products-partners/konstruktor.png" alt="">
         <img src="https://res.cloudinary.com/ddtdtthqh/apero/products-partners/popcorn.png" alt="">
@@ -151,7 +151,7 @@
       <div class="footer__information-item">
         <p class="subtitle white footer__question-subtitle">Маєте запитання чи пропозиції?</p>
         <p class="text white">Заповніть заявку і ми зв’яжемось з Вами </br>найближчим часом</p>
-        <button class="button footer__button">Заповнити заявку</button>
+        <button class="button footer__button modal-open">Заповнити заявку</button>
       </div>
     </div>
 
@@ -164,6 +164,38 @@
   </div>
 
 </footer>
+
+ <!-- modal -->
+
+ <div class="backdrop is-hidden">
+  <div class="modal">
+   <div class="modal__container">
+
+     <button class="button__close modal-close">
+       <svg width="30" height="30">
+         <use href="./images/symbol-defs.svg#icon-close"></use>
+       </svg>
+      </button>
+     <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
+       <h2 class="title question__title">маєте запитання чи </br>пропозиції?</h2>
+       <h3 class="subtitle question__subtitle">Заповніть заявку і ми зв’яжемось з Вами найближчим часом</h3>
+        <div class="question__form-container">
+          <input class="question__input text black" type="text" name="name" id="name" placeholder="Ваше ім'я">
+          <input class="question__input text black" type="email" name="email" id="email" placeholder="Ваш email">
+          <input class="question__input text black" type="tel" name="tel" id="tel" placeholder="Номер телефону">
+          <input class="question__input text black" type="text" name="company" id="company" placeholder="Назва компанії">
+          <textarea class="question__textarea text black" name="comment" id="comment" cols="30" rows="10" placeholder="Напишіть щось"></textarea>
+        </div>
+        <button class="button question__button"  type="submit">Відправити заявку</button>
+       
+        
+      </form>
+   </div>
+
+  </div>
+</div>
 <script type="module" src="./js/header-active-page.js"></script>
+<script type="module" src="./js/form-button-send.js"></script>
+<script type="module" src="./js/button-form.js"></script>
 </body>
 </html>
