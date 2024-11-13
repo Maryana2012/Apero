@@ -175,6 +175,34 @@ button:focus {
   border-radius: 32px;
   margin: 0 auto;
 }
+.header > .button__mobile__menu {
+  display: none;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .header {
+    width: 648px;
+  }
+  .header > .navigation {
+    display: none;
+  }
+  .header > .button__mobile__menu {
+    display: flex;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 743px) {
+  .header {
+    width: 343px;
+  }
+  .header > .navigation {
+    display: none;
+  }
+  .header > .header__button {
+    display: none;
+  }
+  .header > .button__mobile__menu {
+    display: flex;
+  }
+}
 
 .logo {
   margin-left: 18px;
