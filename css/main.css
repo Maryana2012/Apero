@@ -163,20 +163,27 @@ button:focus {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  width: 343px;
+  z-index: 20;
   display: flex;
-  width: 1280px;
   align-items: center;
   justify-content: space-between;
   padding: 6px;
   border-radius: 32px;
   margin: 0 auto;
 }
-.header > .button__mobile__menu {
+.header > .navigation {
   display: none;
+}
+.header > .header__button {
+  display: none;
+}
+.header > .button__mobile__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
   .header {
@@ -187,25 +194,42 @@ button:focus {
   }
   .header > .button__mobile__menu {
     display: flex;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 743px) {
-  .header {
-    width: 343px;
-  }
-  .header > .navigation {
-    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
   }
   .header > .header__button {
-    display: none;
-  }
-  .header > .button__mobile__menu {
     display: flex;
   }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 1280px;
+  }
+  .header > .navigation {
+    display: flex;
+  }
+  .header > .header__button {
+    display: flex;
+  }
+  .header > .button__mobile__menu {
+    display: none;
+  }
+}
+
+.icon__menu__mobile {
+  fill: var(--white);
+  background-color: transparent;
 }
 
 .logo {
   margin-left: 18px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .logo {
+    margin-right: 210px;
+  }
 }
 
 .navigation {
