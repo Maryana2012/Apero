@@ -1,59 +1,15 @@
-// .header{
-//     position: fixed;
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     z-index: 10;
-//     display: flex;
-//     // width: 100%;
-//     width: 1280px;
-//     // width: 343px;
-//     align-items: center;
-//     justify-content:space-between;
-//     padding: 6px;
-//     border-radius: 32px;
-//     margin: 0 auto;
-    //   >.button__mobile__menu{
-    //     display: none;
-    //   }
-    // @include tablet{
-    //     width: 648px;
-        // >.navigation{
-        //     display: none;
-        // }   
-    //     >.button__mobile__menu{
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-//     }
-//     @include mobile{
-//         width: 343px;
-        // >.navigation{
-        //     display: none;
-        // }
-        // >.header__button{
-        //     display: none;
-        // }
-        // >.button__mobile__menu{
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        // }
 
-//     }
-// }
 .header{
     position: fixed;
-    // top: 0;
-    // left: 50%;
-    // transform: translateX(-50%);
-    width: 343px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 6px;
+    padding:  16px 16px;
     border-radius: 32px;
     margin: 0 auto;
     >.navigation{
@@ -70,7 +26,8 @@
         border: none;
     }
     @include tablet{
-        width: 648px;
+        width: 744px;
+        padding: 16px 48px;
         >.navigation{
             display: none;
         }   
@@ -86,7 +43,9 @@
         }
     }
     @include desktop{
-        width: 1280px; 
+        width: 1440px; 
+        padding: 16px 80px;
+        
         >.navigation{
             display: flex;
         }  
@@ -108,10 +67,6 @@
     @include tablet{
            margin-right: 210px ;
     }
-    // @include desktop{
-    //     margin-left: 18px;
-
-    // }
 }
 .navigation{
     display: flex;
@@ -127,18 +82,12 @@
 }
 .nav__link{
     display: flex;
-    // height: 35px;
     align-items: center;
     justify-content: center;
-    // font-weight: 400;
     color: var(--white);
 }
 .nav__link:hover,
 .nav__link:focus{
-    // font-family: 'Fixel Display', sans-serif;
-    // font-weight: 500;
-    // font-size: 20px;
-    // line-height: 140%; 
     color: var(--grey-more-light);
 }
 .header__button{

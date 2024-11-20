@@ -4,17 +4,37 @@
 .hero__section-container{
     position: relative;
     display: flex;
+    // flex-direction: column;
     min-width: 0;
-    margin: 0 auto; 
-
+    margin: 0 auto;
 }
+// .hero__container{
+//     display: flex;
+//     align-items: center;
+//     margin: 0 auto;
+//     width: 1440px;
+//     margin-top: 119px;
+//     padding: 0 0 88px 0;
+// }
 .hero__container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 1440px;
-    margin-top: 119px;
-    padding: 0 0 88px 0;
+    width: 375px;
+    padding: 156px 16px 0 16px;
+
+    @include tablet{
+        width: 744px;
+        padding: 156px 48px 0 48px;
+        flex-direction: column;
+        // padding: 156px 0;
+    }
+    @include desktop{
+        width: 1440px;
+        flex-direction: row;
+        padding: 119px 80px 88px 80px;
+    }
 }
 
 .hero__container-orange{
@@ -31,68 +51,167 @@
 .hero__container-green{
     background-color: var(--green);
 }
+// .hero__text-container{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: center;
+//     width: 800px;
+//     margin-left: 88px ;
+// }
 .hero__text-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 800px;
-    margin-left: 88px ;
+    width: 100%;
+    // padding: 0 16px ;
+    // width: 800px;
+    // margin-left: 88px ;
 }
+
+// .hero__title{
+    // font-family: var(--font-title);
+    // font-weight: 700;
+    // font-size: 72px;
+    // line-height: 120%;
+    // text-transform: uppercase;
+    // color: var(--white);
+    // margin-bottom: 10px;
+// }
+
 .hero__title{
     font-family: var(--font-title);
     font-weight: 700;
-    font-size: 72px;
+    font-size: 38px;
     line-height: 120%;
     text-transform: uppercase;
     color: var(--white);
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+    @include tablet{
+        font-size: 64px;
+        margin-bottom: 5px;
+    }
+    @include desktop{
+        font-size: 72px;
+        margin-bottom: 10px;
+    }
+
 }
+// .hero__subtitle{
+    // font-family: var(--font-title);
+    // font-weight: 400;
+    // font-size: 64px;
+    // line-height: 120%;
+    // letter-spacing: 0.02em;
+    // text-transform: uppercase;
+//     color: var(--white);
+//     margin-bottom: 20px;
+// }
 .hero__subtitle{
     font-family: var(--font-title);
     font-weight: 400;
-    font-size: 64px;
+    font-size: 36px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 20px;
+    @include tablet{
+        font-size: 36px;
+    }
+    @include desktop{
+        font-size: 64px;
+    }
 }
+// .hero__text{
+//     text-align: left;
+//     color: var(--white);
+//     margin-bottom: 24px;
+// }
 .hero__text{
     text-align: left;
     color: var(--white);
     margin-bottom: 24px;
+    font-size: 16px;
+    @include tablet{
+        font-size: 18px;
+    }
 }
 
+// .hero__link{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-radius: 32px;
+//     padding: 8px 8px 8px 24px ;
+//     width: 316px;
+//     background: var(--white);
+//     font-family: 'Fixel Display', sans-serif;
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 140%;
+//     color: var(--black);
+// }
 .hero__link{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 32px;
-    padding: 8px 8px 8px 24px ;
-    width: 316px;
+    padding: 8px 24px 8px 24px ;
+    width: 343px;
     background: var(--white);
     font-family: 'Fixel Display', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 140%;
     color: var(--black);
+    margin-bottom: 25px;
+    @include tablet{
+        width: 316px;
+        padding: 8px 8px 8px 24px ;
+    }
+    @include desktop{
+        width: 316px;
+        padding: 8px 8px 8px 24px ;
+    }
 }
+// .hero__image-container{
+//     position: relative;
+//     margin-right: 188px;
+// }
 .hero__image-container{
     position: relative;
-    margin-right: 188px;
+    margin-bottom: 54px;
+    @include desktop{
+        margin-right: 188px;
+    }
+
 }
+
 .hero__image{
     position: absolute;
     z-index: -100;
+    width: 214px;
+    height: 307px;
     transform: translate(-5%, -5%) ;
     top: 0;
-    left: 0;
-    width: 500px;
-    height: 500px;
+    left: 0;   
     border-radius: 100%;
     filter: blur(250px);
+
+    @include tablet{
+        width: 389px;
+        height: 558px ;
+    }
+    @include desktop{
+        width: 413px;
+        height: 593px ;
+    }
 }
+
+
+
 .hero__image-orange{
     background: radial-gradient(circle at center,  rgb(247, 211, 133) 0%, rgb(243, 149, 64) 92%);
 }
