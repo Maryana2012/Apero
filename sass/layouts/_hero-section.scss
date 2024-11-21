@@ -191,22 +191,26 @@
 
 .hero__image{
     position: absolute;
-    z-index: -100;
-    width: 214px;
-    height: 307px;
-    transform: translate(-5%, -5%) ;
+    z-index: 100;
+    // width: 114px;
+    // height: 207px;
+    width: 300px;
+    height: 300px;
+    transform: translate(-15%, 5%) ;
     top: 0;
     left: 0;   
     border-radius: 100%;
     filter: blur(250px);
 
     @include tablet{
-        width: 389px;
-        height: 558px ;
+        width: 400px;
+        height: 400px;
+        transform: translate(-15%, 5%) ;
     }
     @include desktop{
-        width: 413px;
-        height: 593px ;
+        width: 300px;
+        height: 300px ;
+        transform: translate(-15%, -10%) ;
     }
 }
 

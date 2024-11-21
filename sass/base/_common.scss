@@ -10,12 +10,28 @@ h1{
     box-sizing: border-box;
 }
 
+// .container{
+//     // width: 1280px;
+//     width: 1440px;
+//     padding: 80px;
+//     margin: 0 auto;
+// }
+
 .container{
-    // width: 1280px;
-    width: 1440px;
-    padding: 80px;
+
+    width: 375px;
+    padding: 16px;
     margin: 0 auto;
+    @include tablet{
+        width: 744px;
+        padding: 48px;
+    }
+    @include desktop{
+        width: 1440px;
+        padding: 80px;
+    }
 }
+
 
 .container__grey{
    width: 100%;
@@ -37,21 +53,33 @@ h1{
 .title{
     font-family: 'Tektur', sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
     color: var(--black);
     margin-bottom: 32px;
+    @include tablet{
+        font-size: 40px;
+    }
+    @include desktop{
+        font-size: 40px;
+    }
 }
 .subtitle{
     font-family: 'Fixel Display', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     text-align: center;
     color: var(--black);
     margin-bottom: 40px;
+    @include tablet{
+        font-size: 18px; 
+    }
+    @include desktop{
+        font-size: 18px;
+    }
 }
 .text{
     font-family: 'Fixel Display', sans-serif;
