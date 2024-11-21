@@ -59,6 +59,7 @@ h1{
     text-align: center;
     color: var(--black);
     margin-bottom: 32px;
+
     @include tablet{
         font-size: 40px;
     }
