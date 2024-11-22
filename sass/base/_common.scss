@@ -9,6 +9,9 @@ h1{
 *, *::before, *::after {
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden; /* Забирає горизонтальний скролбар */
+}
 
 // img{
 //     display: block;

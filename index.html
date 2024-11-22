@@ -496,7 +496,6 @@
 
 
     <section class="container container__blue">
-      <!-- <div class="question__container"> -->
         <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
         <!-- //цей сервіс для відправки заявок, потрібно переєструвати на електронну адресу когось із отримувачів Аперо -->
         <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
@@ -523,17 +522,14 @@
           media="(min-width: 1440px)" />
           <img class="question_image-milk" src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-1x_mx36ne.png" alt="milk puds">
         </picture>
-        <!-- <img src="./images/question_milk.png" alt="milk" class="question_image-milk"> -->
-        <!-- <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn"> -->
-      <!-- </div> -->
     </section>
    </main>
    
    <footer class="footer">
     <div class="footer__container">
       <div class="link__container">
-        <svg width="197" height="59">
-          <use href="./images/symbol-defs.svg#icon-logo"></use>
+        <svg class="footer__logo">
+          <use class="footer__logo" href="./images/symbol-defs.svg#icon-logo"></use>
         </svg>
         <ul class="item__container">
           <li class="list footer__list"><a class="link footer__link text white" href="./about.html">Про нас</a></li>
@@ -544,35 +540,38 @@
       </div>
 
       <div class="footer__information-container">
-        <ul class="footer__information-item">
-          <li class="list footer__information-list"> 
-            <svg class="footer__icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-location"></use>
-            </svg>
-            <a class="link text white" href="https://maps.app.goo.gl/PVx23Uv1xSC4gq959">Чернівецька обл., смт. Глибока, </br> вул. Валерія Красняна, 60к</a>
-          </li>
-          <li class="list footer__information-list">
-            <svg class="footer__icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            <a class="link text white" href="">office.apero@gmail.com</a>
-          </li>
-        </ul>
+        <div class="footer__item__container">
+          <ul class="footer__information-item">
+            <li class="list footer__information-list"> 
+              <svg class="footer__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <a class="link text white" href="https://maps.app.goo.gl/PVx23Uv1xSC4gq959">Чернівецька обл., смт. Глибока, </br> вул. Валерія Красняна, 60к</a>
+            </li>
+            <li class="list footer__information-list">
+              <svg class="footer__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <a class="link text white" href="">office.apero@gmail.com</a>
+            </li>
+          </ul>
+  
+          <ul class="footer__information-item">
+            <li class="list footer__information-list">
+              <svg class="footer__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a class="link text white" href="">+38 (066) 74 72 803</a>
+            </li>
+            <li class="list footer__information-list">
+              <svg class="footer__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a class="link text white" href="">+38 (096) 08 97 803</a>
+            </li>
+          </ul>
 
-        <ul class="footer__information-item">
-          <li class="list footer__information-list">
-            <svg class="footer__icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            <a class="link text white" href="">+38 (066) 74 72 803</a>
-          </li>
-          <li class="list footer__information-list">
-            <svg class="footer__icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            <a class="link text white" href="">+38 (096) 08 97 803</a>
-          </li>
-        </ul>
+        </div>
 
         <div class="footer__information-item">
           <p class="subtitle white footer__question-subtitle">Маєте запитання чи пропозиції?</p>
