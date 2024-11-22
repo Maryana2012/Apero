@@ -1,7 +1,17 @@
 .partners__container{
-    width: 1440px;
-    padding: 80px 0;
+    width: 375px;
+    padding: 48px 0;
     margin: 0 auto;
+
+
+    @include tablet{
+        width: 744px;
+        padding: 48px 0;
+    }
+    @include desktop{
+        width: 1440px;
+        padding: 80px 0;
+    }
 }
 .marquee__images{
     max-width: 100%;
@@ -12,30 +22,45 @@
     display: flex;
     flex-direction: row;
     width: 1600%;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 16px;
+    margin-bottom: 16px;
     animation: marquee__images-left 20s linear infinite  alternate;
-
+    @include tablet{
+        gap: 20px;
+        margin-bottom: 20px;
+        animation: marquee__images-left 20s linear infinite  alternate;
+    }
 }
 .partners__block{
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 24px;
-    flex: 0 0 289px;
-    height: 104px;
+    flex: 0 0 163px;
+    height: 64px;
     padding: 5px;
     background-color: var(--white);    
     white-space: nowrap;
     width: 20%;
+    @include tablet{
+        flex: 0 0 203px;
+        height: 80px;
+    }
+    @include desktop{
+        flex: 0 0 289px;
+        height: 104px;
+    }
 }
 .partners__blocks-second{
     display: flex;
     flex-direction: row;
     width: 1600%;
-    gap: 20px;
-    // animation: marquee__images-right 15s linear infinite  alternate;
+    gap: 16px;
     animation: marquee__images-left 20s linear infinite  alternate;
+    @include tablet{
+        gap: 20px;
+        animation: marquee__images-left 20s linear infinite  alternate;
+    }
 
 }
 
