@@ -496,7 +496,7 @@
 
 
     <section class="container container__blue">
-      <div class="question__container">
+      <!-- <div class="question__container"> -->
         <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
         <!-- //цей сервіс для відправки заявок, потрібно переєструвати на електронну адресу когось із отримувачів Аперо -->
         <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
@@ -511,9 +511,21 @@
           </div>
           <button class="button question__button" type="submit">Відправити заявку</button>
         </form>
-        <img src="./images/question_milk.png" alt="milk" class="question_image-milk">
-        <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
-      </div>
+        <picture>
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/qustion-corn-desk-1x_pa5mli.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292477/apero/questions/qustion-corn-desk-2x_bshxqo.png 2x"
+          media="(min-width: 1440px)" />
+          <img class="question_image-popcorn" src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/qustion-corn-desk-1x_pa5mli.png" alt="corn ready">
+        </picture>
+        <picture>
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-1x_mx36ne.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-2x_fuepul.png 2x"
+          media="(min-width: 1440px)" />
+          <img class="question_image-milk" src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-1x_mx36ne.png" alt="milk puds">
+        </picture>
+        <!-- <img src="./images/question_milk.png" alt="milk" class="question_image-milk"> -->
+        <!-- <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn"> -->
+      <!-- </div> -->
     </section>
    </main>
    
