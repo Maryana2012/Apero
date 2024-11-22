@@ -38,9 +38,20 @@ h1 {
 
 .container {
   width: 375px;
-  padding: 16px;
+  padding: 80px 16px;
   margin: 0 auto;
-  @inc;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .container {
+    width: 744px;
+    padding: 120px 48px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 160px 80px;
+  }
 }
 
 .container__grey {
@@ -66,30 +77,64 @@ h1 {
 .title {
   font-family: "Tektur", sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
 }
 
 .subtitle {
   font-family: "Fixel Display", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   text-align: center;
   color: var(--black);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 .text {
   font-family: "Fixel Display", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   color: var(--black);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text {
+    font-size: 16px;
+  }
 }
 
 .number {
@@ -501,20 +546,53 @@ button:focus {
 .collection__subtitle {
   font-family: "Tektur", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 120%;
   text-align: center;
   color: var(--white);
   margin-bottom: 16px;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__subtitle {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__subtitle {
+    font-size: 36px;
+  }
+}
 
 .collection__text {
-  margin-bottom: 48px;
+  width: 100%;
+  margin-bottom: 32px;
   color: var(--white);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__text {
+    width: 423px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__text {
+    width: 414px;
+    margin-bottom: 48px;
+  }
 }
 
 .collection__text-small {
-  margin-bottom: 130px;
+  margin-bottom: 95px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__text-small {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__text-small {
+    margin-bottom: 80px;
+  }
 }
 
 .collection__link {
@@ -523,40 +601,104 @@ button:focus {
 
 .collection__container {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__container {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__container {
+    flex-direction: row;
+  }
 }
 
 .collection__block {
   position: relative;
   display: flex;
   width: 100%;
-  height: 360px;
   border-radius: 24px;
   margin-bottom: 24px;
 }
 
 .collection__block-blue {
-  text-align: center;
+  padding: 24px 16px;
+  text-align: start;
   justify-content: center;
   background: linear-gradient(153deg, #12a1de 0%, #c6ffd9 100%);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__block-blue {
+    width: 100%;
+    text-align: start;
+    padding: 38px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__block-blue {
+    width: 100%;
+    text-align: center;
+    padding: 54px 24px;
+  }
+}
 
 .collection__block-yellow {
-  width: 630px;
-  padding: 24px;
+  width: 100%;
+  padding: 24px 16px;
   background: linear-gradient(136deg, #f5a609 14.5%, #fff9a8 100%);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__block-yellow {
+    width: 100%;
+    padding: 38px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__block-yellow {
+    width: 630px;
+    padding: 65px 24px;
+  }
 }
 
 .collection__block-pink {
-  width: 630px;
-  padding: 24px;
+  width: 100%;
+  padding: 24px 16px;
   background: linear-gradient(159deg, #e070a0 0%, #ffc0d5 100%);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__block-pink {
+    width: 100%;
+    padding: 38px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__block-pink {
+    width: 630px;
+    padding: 65px 24px;
+  }
 }
 
 .collection__block-orange {
-  text-align: center;
+  text-align: start;
   justify-content: center;
+  padding: 24px 16px;
   background: linear-gradient(137deg, #de4f12 12.37%, #f7d385 100%);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .collection__block-orange {
+    width: 100%;
+    text-align: start;
+    padding: 38px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection__block-orange {
+    width: 100%;
+    text-align: center;
+    padding: 54px 24px;
+  }
 }
 
 .collection__block-text {
@@ -564,6 +706,11 @@ button:focus {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+  .collection__block-text {
+    align-items: center;
+  }
 }
 
 .collection__block-text-small {
@@ -577,30 +724,42 @@ button:focus {
   right: 0;
 }
 
-.image__snax-bacon {
+.image__baget__white {
   position: absolute;
-  height: 380px;
-  bottom: -20px;
-  left: -40px;
-}
-
-.image__snax-onion {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  transform: rotate(-10deg);
+  bottom: 22px;
+  right: 10px;
 }
 
 .image__popcorn-caramel {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 300px;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .image__popcorn-caramel {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+  }
 }
 
 .image__popcorn-ready {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.image__baget__ketchup {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .image__baget__ketchup {
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    left: 34px;
+    transform: rotate(5deg);
+  }
 }
 
 .advantages__item {

@@ -10,28 +10,27 @@ h1{
     box-sizing: border-box;
 }
 
-// .container{
-//     // width: 1280px;
-//     width: 1440px;
-//     padding: 80px;
-//     margin: 0 auto;
+// img{
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
 // }
-
 .container{
 
     width: 375px;
-    padding: 16px;
+    padding: 80px 16px ;
     margin: 0 auto;
+
+
     @include tablet{
         width: 744px;
-        padding: 48px;
+        padding: 120px 48px;
     }
     @include desktop{
         width: 1440px;
-        padding: 80px;
+        padding: 160px 80px;
     }
 }
-
 
 .container__grey{
    width: 100%;
@@ -58,13 +57,15 @@ h1{
     text-transform: uppercase;
     text-align: center;
     color: var(--black);
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 
     @include tablet{
         font-size: 40px;
+        margin-bottom: 16px;
     }
     @include desktop{
         font-size: 40px;
+        margin-bottom: 32px;
     }
 }
 .subtitle{
@@ -74,20 +75,29 @@ h1{
     line-height: 140%;
     text-align: center;
     color: var(--black);
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     @include tablet{
         font-size: 18px; 
+        margin-bottom: 32px;
     }
     @include desktop{
         font-size: 18px;
+        margin-bottom: 40px;
     }
 }
 .text{
     font-family: 'Fixel Display', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%; 
     color: var(--black);
+
+    @include tablet{
+        font-size: 16px;
+    }
+    @include desktop{
+        font-size: 16px;
+    }
 }
 .number{
     font-family: "Fixel Display", sans-serif;
@@ -121,6 +131,7 @@ button:focus{
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+  
 }
 
 .white{
