@@ -1,33 +1,67 @@
 .about__production-container{
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    flex-direction: column;
+    @include desktop{
+        flex-direction: row;
+        align-items: center;
+        
+    }
 }
 .about__production__container-grey{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-radius: 24px;
-    padding: 276px 217px 276px 24px;
-    width: 630px;
+    padding: 116px 92px 116px 16px;
+    width: 253px;
     background-color: var(--grey-more-light);
+    @include tablet{
+        width: 425px;
+        padding: 196px 24px 196px 24px;
+    }
+    @include desktop{
+        padding: 276px 217px 276px 24px;
+        width: 630px;
+    }
 }
 .about__production__container-white{
     display:flex ;
     flex-direction: column;
-    width: 413px;
+    width: 100%;
+    margin-top: 32px;
+    @include tablet{
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    @include desktop{
+        width: 413px;
+        margin-top: 0;
+        // flex-direction: row;
+        margin-left: 233px;
+    }
 }
 .about__production-title{
     margin: 0;
 }
 .about__production__text-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    // justify-content: space-between;
     width: 100%;
-    padding: 16px 0;
-    margin-bottom: 24px;
+    // padding: 16px 0;
+    // margin: 32px 0;
+    margin-bottom: 20px;
+    @include tablet{
+        margin-bottom: 0;
+    }
+    @include desktop{
+        flex-direction: row;
+        align-items: center;
+    }
 }
 .about__production__text-container:last-child{
     margin-bottom: 0;
@@ -35,17 +69,33 @@
 .about__production-number{
     width: 206px;
     color: var(--orange-dark);
+    margin-bottom: 20px;
+    @include desktop{
+        margin: 0;
+    }
 }
 .about__production-text{
     display: flex;
-    width: 207px;
+    width: 100%;
     align-items: center;
     justify-content: flex-start;
+    // margin-bottom: 12px;
+    @include desktop{
+        width: 207px;
+    }
 }
 .about__production-image{
     position: absolute;
-    width: 414px;
-    height: 428px;
-    top: 170px;
-    left: 500px;
+    // width: 414px;
+    // height: 428px;
+    top: 130px;
+    left: 190px;
+    @include tablet{
+        top: 150px;
+        left: 390px;
+    }
+    @include desktop{
+        top: 250px;
+        left: 500px;
+    }
 }

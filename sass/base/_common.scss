@@ -105,9 +105,15 @@ html, body {
 .number{
     font-family: "Fixel Display", sans-serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 120%;
     letter-spacing: 0.02em;
+    @include tablet{
+        font-size: 56px;
+    }
+    @include desktop{
+        font-size: 64px;
+    }
 }
 .button{
     display: flex;
