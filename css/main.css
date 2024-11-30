@@ -219,13 +219,14 @@ button:focus {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 375px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 343px;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 16px;
+  padding: 6px;
   border-radius: 32px;
   margin: 0 auto;
 }
@@ -244,8 +245,8 @@ button:focus {
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
   .header {
-    width: 744px;
-    padding: 16px 48px;
+    width: 648px;
+    padding: 6px;
   }
   .header > .navigation {
     display: none;
@@ -263,8 +264,8 @@ button:focus {
 }
 @media screen and (min-width: 1440px) {
   .header {
-    width: 1440px;
-    padding: 16px 80px;
+    width: 1280px;
+    padding: 6px;
   }
   .header > .navigation {
     display: flex;
@@ -280,6 +281,10 @@ button:focus {
 .icon__menu__mobile {
   fill: var(--white);
   background-color: transparent;
+}
+
+.icon__menu__mobile-second {
+  fill: var(--black);
 }
 
 .logo {
@@ -1181,21 +1186,71 @@ button:focus {
 .about__hero-title {
   font-family: "Tektur", sans-serif;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 40px;
   line-height: 120%;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__hero-title {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__hero-title {
+    font-size: 72px;
+    margin-bottom: 32px;
+  }
 }
 
 .about__text {
   color: var(--white);
-  margin-bottom: 24px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__text {
+    margin-bottom: 33px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__text {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
 }
 
 .about__hero-block {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: start;
+}
+@media screen and (min-width: 1440px) {
+  .about__hero-block {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.about__hero__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__hero__container {
+    width: 380px;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__hero__container {
+    width: 380px;
+    align-items: start;
+  }
 }
 
 .about__hero__link {
@@ -1203,18 +1258,36 @@ button:focus {
 }
 
 .about__offer-container {
+  width: 100%;
   border-radius: 24px;
   padding: 24px;
   background-color: var(--white);
+  margin-top: 40px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__offer-container {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__offer-container {
+    margin: 0;
+    width: 413px;
+  }
 }
 
 .about__offer-title {
   font-family: "Fixel Display", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 140%;
   color: var(--orange-dark);
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .about__offer-title {
+    font-size: 20px;
+  }
 }
 
 .about__offer-text {
@@ -1712,9 +1785,21 @@ button:focus {
 
 .partners__button {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
-  width: 243px;
+  width: 100%;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .partners__button {
+    width: 243px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .partners__button {
+    width: 243px;
+    margin: 0;
+  }
 }
 
 .footer {

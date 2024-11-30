@@ -20,7 +20,15 @@
 }
 .partners__button{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
-    width: 243px;
+    width: 100%;
+    @include tablet{
+       width: 243px;
+       margin: 0;
+    }
+    @include desktop{
+        width: 243px;
+        margin: 0;
+    }
 }

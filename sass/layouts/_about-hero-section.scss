@@ -1,38 +1,90 @@
 .about__hero-title{
     font-family: "Tektur", sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 40px;
     line-height: 120%;
     text-transform: uppercase;
     color: var(--white);
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    @include tablet{
+        font-size: 64px;
+    }
+    @include desktop{
+        font-size: 72px;
+        margin-bottom: 32px;
+    }
 }
 
 .about__text{
    color: var(--white); 
-   margin-bottom: 24px;
+   font-size: 16px;
+   margin-bottom: 40px;
+   @include tablet{
+   margin-bottom: 33px;
+   font-size: 18px;
+   }
+   @include desktop{
+    font-size: 18px;
+    margin-bottom: 24px;
+   }
 }
 .about__hero-block{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: start;
+    @include desktop{
+    flex-direction: row;
+    align-items: center;
+
+    }
+    
+}
+.about__hero__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include tablet{
+        width: 380px;
+        align-items: start;
+    }
+    @include desktop{
+        width: 380px;
+        align-items: start;
+    }
 }
 
 .about__hero__link{
     width: 243px;
 }
 .about__offer-container{
+    width: 100%;
     border-radius: 24px;
     padding: 24px;
     background-color: var(--white);
+    margin-top: 40px;
+    @include tablet{
+        margin-top: 80px;
+    }
+    @include desktop{
+        margin: 0;
+        width: 413px;
+    }
 }
 
 .about__offer-title{
     font-family: "Fixel Display", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 140%;
     color: var(--orange-dark);
     margin-bottom: 16px;
+    @include tablet{
+
+    }
+    @include desktop{
+        font-size: 20px;
+    }
 }
 .about__offer-text{
    color: var(--orange-dark);
