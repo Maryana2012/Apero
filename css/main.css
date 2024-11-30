@@ -1446,22 +1446,41 @@ button:focus {
 
 .about__history__block-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1440px) {
+  .about__history__block-container {
+    flex-direction: row;
+  }
 }
 
 .about__history-block {
   border-radius: 24px;
-  padding: 24px;
-  width: 413px;
+  padding: 16px;
+  width: 100%;
   background-color: var(--white);
-  margin-bottom: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .about__history-block {
+    width: 413px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 .about__history-subtitle {
   display: flex;
   justify-content: flex-start;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .about__history-subtitle {
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
 }
 
 .about__description__container-all {
