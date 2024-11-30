@@ -177,7 +177,7 @@
 
     <section class="container">
       <h2 class="title about__description-title">виробництво</h2>
-      <p class="text">Український виробник харчових продуктів АПЕРО - </br>це лідер у ніші сучасного ринку. Ми пишаємося кукурудзяними виробами, які </br> потрапляють до споживачів</p>
+      <p class="text about__description__text-container">Український виробник харчових продуктів АПЕРО - це лідер у ніші сучасного ринку. Ми пишаємося кукурудзяними виробами, які потрапляють до споживачів</p>
       <div class="about__description__container-all">
         <div class="about__description__container-big">
           <div class="about__description-container">
@@ -200,7 +200,19 @@
             <p class="text white">Сучасні технології, менеджмент безпечності харчових товарів, імпортне обладнання та безкомпромісність щодо якості - це все про стандарти виробництва АПЕРО</p>
           </div>
         </div>
-        <img class="image__description" src="./images/about-production.png" alt="production">
+        <picture>
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992940/apero/about/about2-desktop-1x-min_b1ypln.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992941/apero/about/about2-desktop-2x-min_ywttb3.png 2x" 
+          media="(min-width: 1440px)" />
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992941/apero/about/about2-tablet-1x-min_wumagu.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992941/apero/about/about2-tablet-2x-min_hvtowg.png 2x" 
+          media="(min-width: 744px) and (max-width: 1439px)" />
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992940/apero/about/about2-mob-1x-min_pr3iav.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992941/apero/about/about2-mob-2x-min_of0h7a.png 2x" 
+          media="(max-width: 743px)"/>
+         <img class="image__description"  src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732992940/apero/about/about2-mob-1x-min_pr3iav.png"  alt="production"  />
+        </picture>
+        <!-- <img class="image__description" src="./images/about-production.png" alt="production"> -->
       </div>
     </section>
 

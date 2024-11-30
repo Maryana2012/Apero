@@ -1485,6 +1485,12 @@ button:focus {
 
 .about__description__container-all {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .about__description__container-all {
+    flex-direction: row;
+  }
 }
 
 .about__description__container-big {
@@ -1498,15 +1504,43 @@ button:focus {
 
 .about__description-container {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 16px;
   margin-top: 24px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__description-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__description-container {
+    gap: 20px;
+    flex-direction: row;
+  }
 }
 
 .about__description-block {
   border-radius: 24px;
-  padding: 24px;
-  width: 305px;
+  padding: 16px;
+  width: 100%;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .about__description-block {
+    width: 305px;
+    padding: 24px;
+  }
+}
+
+.about__description__text-container {
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .about__description__text-container {
+    width: 628px;
+  }
 }
 
 .block__orange {
@@ -1526,11 +1560,16 @@ button:focus {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 24px;
-  padding: 24px;
-  width: 630px;
-  height: 265px;
+  padding: 16px;
+  width: 100%;
   background: linear-gradient(137deg, #de4f12 12.37%, #f7d385 100%);
   margin-right: 21px;
+}
+@media screen and (min-width: 1440px) {
+  .block__orange-big {
+    width: 630px;
+    padding: 24px;
+  }
 }
 
 .about__description-text {
@@ -1540,21 +1579,54 @@ button:focus {
 .arrow__orange {
   width: 40px;
   height: 40px;
+  margin-bottom: 32px;
   fill: var(--orange-dark);
-  margin-left: 217px;
+  margin-left: 267px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .arrow__orange {
+    margin-left: 217px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .arrow__orange {
+    margin-bottom: 0;
+    margin-left: 217px;
+  }
 }
 
 .arrow__white {
   width: 40px;
   height: 40px;
-  margin-left: 542px;
+  margin-left: 267px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .arrow__white {
+    margin-bottom: 85px;
+    margin-left: 572px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .arrow__white {
+    margin-left: 542px;
+    margin-bottom: 111px;
+  }
 }
 
 .image__description {
   border-radius: 24px;
-  width: 630px;
-  height: 550px;
-  margin-top: 24px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image__description {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .image__description {
+    margin-top: 24px;
+  }
 }
 
 .about__sticks-container {
