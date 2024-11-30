@@ -1632,8 +1632,15 @@ button:focus {
 .about__sticks-container {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: space-between;
+}
+@media screen and (min-width: 1440px) {
+  .about__sticks-container {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .about__sticks__container-white {
@@ -1641,17 +1648,54 @@ button:focus {
   justify-content: flex-start;
   align-items: center;
   border-radius: 24px;
-  padding: 228px 216px 228px 24px;
-  width: 629px;
+  padding: 99px 16px;
+  width: 253px;
   background-color: var(--white);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__sticks__container-white {
+    width: 425px;
+    padding: 130px 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__sticks__container-white {
+    width: 629px;
+    padding: 228px 216px 228px 24px;
+    margin-bottom: 0;
+  }
 }
 
 .about__sticks-item {
-  width: 413px;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .about__sticks-item {
+    width: 413px;
+    margin-left: 235px;
+  }
 }
 
 .about__sticks-list {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__sticks-list {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__sticks-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__sticks-list:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .about__sticks-title {
@@ -1665,14 +1709,25 @@ button:focus {
   font-size: 20px;
   line-height: 140%;
   color: var(--orange-dark);
+  margin-bottom: 8px;
 }
 
 .sticks__image {
   position: absolute;
-  width: 414px;
-  height: 446px;
-  top: 165px;
-  left: 500px;
+  top: 130px;
+  left: 195px;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .sticks__image {
+    top: 160px;
+    left: 370px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sticks__image {
+    top: 230px;
+    left: 500px;
+  }
 }
 
 .about__product-title {

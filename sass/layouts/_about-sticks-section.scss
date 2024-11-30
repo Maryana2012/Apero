@@ -1,24 +1,56 @@
 .about__sticks-container{
     position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: space-between;
+    @include desktop{
+        flex-direction: row;
+        align-items: center;
+    }
 }
 .about__sticks__container-white{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-radius: 24px;
-    padding: 228px 216px 228px 24px;
-    // width: 388px;
-    width: 629px;
+    padding: 99px 16px;
+    width: 253px;
+    // width: 100%;
     background-color: var(--white);
+    margin-bottom: 20px;
+    @include tablet{
+        width: 425px;
+        padding: 130px 24px;
+    }
+    @include desktop{
+        width: 629px;
+        padding: 228px 216px 228px 24px;
+        margin-bottom: 0;
+    }
 }
 .about__sticks-item{
-    width: 413px;
+    width: 100%;
+    @include desktop{
+        width: 413px;
+        margin-left: 235px;
+    }
 }
 .about__sticks-list{
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    @include tablet{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        margin-bottom: 40px;
+    }
+}
+.about__sticks-list:last-child{
+    @include tablet{
+
+        margin-bottom: 0;
+    }
 }
 .about__sticks-title{
     text-align: left;
@@ -30,11 +62,21 @@
     font-size: 20px;
     line-height: 140%;
     color: var(--orange-dark);
+    margin-bottom: 8px;
+ 
 }
 .sticks__image{
     position: absolute;
-    width: 414px;
-    height: 446px;
-    top: 165px;
-    left: 500px;
+    // width: 414px;
+    // height: 446px;
+    top: 130px;
+    left: 195px;
+    @include tablet{
+        top: 160px;
+        left: 370px;
+    }
+    @include desktop{
+        top: 230px;
+        left: 500px;
+    }
 }
