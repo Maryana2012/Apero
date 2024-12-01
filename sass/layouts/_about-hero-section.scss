@@ -89,3 +89,17 @@
 .about__offer-text{
    color: var(--orange-dark);
 }
+.about__hero__button{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    @include tablet{
+       width: 243px;
+       margin: 0;
+    }
+    @include desktop{
+        width: 243px;
+        margin: 0;
+    }
+}

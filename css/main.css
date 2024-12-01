@@ -1304,6 +1304,25 @@ button:focus {
   color: var(--orange-dark);
 }
 
+.about__hero__button {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .about__hero__button {
+    width: 243px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__hero__button {
+    width: 243px;
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .about__statistic-block {
     margin-left: 650px;
@@ -2040,9 +2059,14 @@ button:focus {
 }
 
 .partner__container {
-  padding: 80px 0 0 0;
+  padding: 80px 8px 0 8px;
   border-radius: 24px;
   background: linear-gradient(153deg, #12a1de 0%, #c6ffd9 100%);
+}
+@media screen and (min-width: 1440px) {
+  .partner__container {
+    padding: 80px 0 0 0;
+  }
 }
 
 .partners__title {
@@ -2069,13 +2093,13 @@ button:focus {
 @media screen and (min-width: 744px) and (max-width: 1439px) {
   .partners__button {
     width: 243px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1440px) {
   .partners__button {
     width: 243px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -2254,6 +2278,11 @@ button:focus {
   margin-bottom: 16px;
   border-bottom: 1px solid var(--black-hover);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .partner__title {
+    font-size: 64px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .partner__title {
     font-size: 72px;
@@ -2280,6 +2309,14 @@ button:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: start;
+}
+@media screen and (min-width: 1440px) {
+  .partner__block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .advantage__item {
@@ -2293,10 +2330,12 @@ button:focus {
   width: 100%;
   padding: 32px 32px 32px 16px;
   border-bottom: 1px solid var(--grey-more-light);
+  align-items: start;
 }
 @media screen and (min-width: 1440px) {
   .advantage__list {
     padding: 40px 24px;
+    align-items: center;
   }
 }
 
@@ -2327,11 +2366,27 @@ button:focus {
   color: var(--black);
   margin-bottom: 16px;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .advantage__text {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .advantage__text {
     width: 400px;
     font-size: 24px;
     margin-bottom: 0;
+  }
+}
+
+.advantage__description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1440px) {
+  .advantage__description {
+    width: 400px;
   }
 }
 
