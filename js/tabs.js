@@ -1,7 +1,11 @@
 const popcorn = document.querySelectorAll('.popcorn__list');
+// console.log(popcorn)
 const snacks = document.querySelectorAll('.snacks__list');
+// console.log(snacks)
 const corn = document.querySelectorAll('.corn__list');
+// console.log(corn)
 const buds = document.querySelectorAll('.buds__list');
+// console.log(buds)
 
 
 const allButton = document.querySelector('.all');
