@@ -6,49 +6,72 @@
 .contacts__block-orange{
     position: relative;
     border-radius: 24px;
-    padding: 24px;
-    // width: 799px; 
-    width: 847px;
-    height: 237px;
+    padding: 16px 16px 68px 16px;
+    width: 100%;
     background: linear-gradient(137deg, #de4f12 12.37%, #f7d385 100%);
+    @include desktop{
+        padding: 24px 24px 76px 24px; 
+        width: 847px;
+    }
 }
 .contacts__block-blue{
     position: relative;
     border-radius: 24px;
-    padding: 24px;
-    width: 413px;
-    // width: 365px; 
-    height: 237px;
+    padding: 16px 16px 68px 16px;
+    width: 100%;
     background: linear-gradient(153deg, #12a1de 0%, #c6ffd9 100%);
+    @include tablet{
+        width: 314px;
+        padding: 16px 16px 104px 16px;
+    }
+    @include desktop{
+        padding: 24px 24px 128px 24px; 
+        width: 413px;
+    }
 }
 .contacts__block{
     position: relative;
     border-radius: 24px;
-    padding: 24px;
-    width: 413px;
-    // width: 365px; 
-    height: 237px;
+    padding: 16px 16px 68px 16px;
+    width: 100%;
     background: var(--white);
+    @include tablet{
+        width: 314px;
+        padding: 16px 16px 104px 16px;
+    }
+    @include desktop{
+        width: 413px;
+        padding: 24px 24px 128px 24px; 
+    }
 }
 .contacts__title{
-    font-size: 32px;
-    // color: var(--white);
+    font-size: 24px;
     margin-bottom: 24px;
     text-align: start;
+    @include desktop{
+        font-size: 32px;
+    }
 }
-// .contacts__item{
-
-// }
 .contacts__list{
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
 .contacts__list:last-child{
-    margin-bottom: 0;
+        margin-bottom: 0;
 }
 .contacts__icon{
     position: absolute;
-    bottom: 24px;
-    right: 24px;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    @include tablet{
+        bottom: 16px;
+        right: 16px;
+    }
+    @include desktop{
+        bottom: 24px;
+        right: 24px;
+    }
 }

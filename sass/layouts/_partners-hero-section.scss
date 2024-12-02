@@ -5,7 +5,7 @@
     font-weight: 700;
     font-size: 40px;
     text-align: start;
-    margin-top: 56px;
+    // margin-top: 56px;
     margin-bottom: 16px;
     border-bottom: 1px solid var(--black-hover);
     @include tablet{
@@ -17,7 +17,7 @@
 }
 .partner__subtitle{
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
     text-align: start;
     @include desktop{
         font-size: 20px;
