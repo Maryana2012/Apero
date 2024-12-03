@@ -98,16 +98,6 @@
     }
 
 }
-// .hero__subtitle{
-    // font-family: var(--font-title);
-    // font-weight: 400;
-    // font-size: 64px;
-    // line-height: 120%;
-    // letter-spacing: 0.02em;
-    // text-transform: uppercase;
-//     color: var(--white);
-//     margin-bottom: 20px;
-// }
 .hero__subtitle{
     font-family: var(--font-title);
     font-weight: 400;
@@ -124,11 +114,6 @@
         font-size: 64px;
     }
 }
-// .hero__text{
-//     text-align: left;
-//     color: var(--white);
-//     margin-bottom: 24px;
-// }
 .hero__text{
     text-align: left;
     color: var(--white);
@@ -138,21 +123,6 @@
         font-size: 18px;
     }
 }
-
-// .hero__link{
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     border-radius: 32px;
-//     padding: 8px 8px 8px 24px ;
-//     width: 316px;
-//     background: var(--white);
-//     font-family: 'Fixel Display', sans-serif;
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 140%;
-//     color: var(--black);
-// }
 .hero__link{
     display: flex;
     align-items: center;
@@ -176,10 +146,6 @@
         padding: 8px 8px 8px 24px ;
     }
 }
-// .hero__image-container{
-//     position: relative;
-//     margin-right: 188px;
-// }
 .hero__image-container{
     position: relative;
     margin-bottom: 54px;
@@ -189,30 +155,28 @@
 
 }
 
-.hero__image{
-    position: absolute;
-    z-index: 100;
-    // width: 114px;
-    // height: 207px;
-    width: 300px;
-    height: 300px;
-    transform: translate(-15%, 5%) ;
-    top: 0;
-    left: 0;   
-    border-radius: 100%;
-    filter: blur(250px);
+// .hero__image{
+//     position: absolute;
+//     z-index: 100;
+//     // width: 300px;
+//     // height: 300px;
+//     transform: translate(-15%, 5%) ;
+//     top: 0;
+//     left: 0;   
+//     border-radius: 100%;
+//     filter: blur(250px);
 
-    @include tablet{
-        width: 400px;
-        height: 400px;
-        transform: translate(-15%, 5%) ;
-    }
-    @include desktop{
-        width: 300px;
-        height: 300px ;
-        transform: translate(-15%, -10%) ;
-    }
-}
+//     @include tablet{
+//         // width: 400px;
+//         // height: 400px;
+//         transform: translate(-15%, 5%) ;
+//     }
+//     @include desktop{
+//         // width: 300px;
+//         // height: 300px ;
+//         transform: translate(-15%, -10%) ;
+//     }
+// }
 
 
 

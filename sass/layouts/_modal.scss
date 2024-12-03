@@ -19,13 +19,29 @@
 }
 .modal{
     position: absolute;
-    top: 120px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%) ;
+    transform: translate(-50%,50%) ;
+    // @include tablet{
+    //     top: 300px;
+    //     left: 50%;
+    //     transform: translate(-50%) ;
+    // }
+    // @include desktop{
+    //     top: 300px;
+    //     left: 50%;
+    //     transform: translate(-50%) ;
+    // }
 }
 .modal__container{
     position: relative;
     width: 630px;
+    // @include tablet{
+    //     width: 600px;
+    // }
+    // @include desktop{
+    //     width: 630px;
+    // }
 }
 .button__close{
     position: absolute;
