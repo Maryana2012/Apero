@@ -2104,13 +2104,46 @@ button:focus {
   position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translate(-50%, 15%);
+  transform: translate(35%, 21%);
+  rotate: 90deg;
 }
 @media screen and (min-width: 1440px) {
   .image_corn__pods {
     left: 50%;
     bottom: 50%;
-    transform: translate(-50%, 30%);
+    transform: translate(80%, 20%);
+  }
+}
+
+.image_corn__pods__milk {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(30%, 38%);
+  rotate: 90deg;
+}
+@media screen and (min-width: 1440px) {
+  .image_corn__pods__milk {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(80%, 20%);
+  }
+}
+
+.image_corn__pods__choco {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(20%, 40%);
+  rotate: 90deg;
+}
+@media screen and (min-width: 1440px) {
+  .image_corn__pods__choco {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(40%, 47%);
   }
 }
 
