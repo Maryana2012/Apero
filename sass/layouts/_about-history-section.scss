@@ -15,9 +15,7 @@ text-align: start;
     padding: 16px;
     width: 100%;
     background-color: var(--white);
-    // margin-bottom: 24px;
     @include tablet{
-        // width: 200px;
     }
     @include desktop{
         width: 413px; 
@@ -28,7 +26,6 @@ text-align: start;
 .about__history-subtitle{
     display: flex;
     justify-content: flex-start;
-    // font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
     @include desktop{

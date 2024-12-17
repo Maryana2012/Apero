@@ -14,11 +14,13 @@
     border-radius: 24px;
     border: none;
     padding: 12px;
-
 }
+
 .product__button:hover,
 .product__button:focus{
     cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
 }
 .product__list-container{
     display: flex;
@@ -39,7 +41,7 @@
     padding: 172px 10px 16px 10px;
     border-radius: 24px;
     background-color: var(--white);
-    margin-bottom: 36px;
+    
     @include tablet{
         width: 314px;
         height: 460px;
@@ -58,13 +60,9 @@
     bottom: 50%;
     transform: translate(-50%,10%);
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%,35%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%,30%);
 
     }
@@ -76,13 +74,9 @@
     bottom: 50%;
     transform: translate(-45%, 10%);
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
-        transform: translate(-45%, 40%);
+       transform: translate(-45%, 40%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-45%,30%);
     }
 }
@@ -93,13 +87,9 @@
     bottom: 50%;
     transform: translate(-50%);
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%, 35%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%,30%);
     }
 }
@@ -110,13 +100,9 @@
     bottom: 50%;
     transform: translate(-50%,5%);
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%,35%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(-50%,30%);
     }
 }
@@ -128,13 +114,9 @@
     transform: translate(35%,21%);
     rotate: 90deg;
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(75%,19%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(80%,20%);
     }
 }
@@ -146,13 +128,9 @@
     transform: translate(30%,38%);
     rotate: 90deg;
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(80%,19%); 
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(80%,20%);
     }
 }
@@ -164,13 +142,9 @@
     transform: translate(20%,40%);
     rotate: 90deg;
     @include tablet{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(38%,46%);
     }
     @include desktop{
-        // left: 50%;
-        // bottom: 50%;
         transform: translate(40%,47%);
     }
 }

@@ -109,12 +109,17 @@
 }
 .footer__button{
     width: 100%;
-    // width: 413px;
     margin-top: 24px;
     background-color: var(--grey-more-light);
-    // font-weight: 500;
-    // justify-content: center;
-    // padding: 16px;
+    border: 2px solid var(--grey-light);
+    padding: 14px 22px;
+
+}
+.footer__button:hover,
+.footer__button:focus{
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--grey-light);
 }
 .footer__conditions-item{
     display: flex;

@@ -41,8 +41,12 @@
     }
 }
 .advantage__button{
-    // padding: 8px 8px 8px 24px;
     background-color: var(--black);
     color: var(--white);
     margin: 0 auto;
+}
+.advantage__button:hover,
+.advantage__button:focus{
+    background-color: var(--white);
+    color: var(--black);
 }

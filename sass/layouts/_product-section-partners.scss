@@ -35,3 +35,8 @@
         margin: 0 auto;
     }
 }
+.partners__button:hover,
+.partners__button:focus{
+    background-color: var(--black);
+    color: var(--white);
+}

@@ -19,6 +19,9 @@
     >.header__button{
         display: none;
     }
+    >.header__button-second{
+        display: none;
+    }
     >.button__mobile__menu{
         display: flex;
         justify-content: center;
@@ -42,6 +45,9 @@
         >.header__button{
             display: flex;
         }
+        >.header__button-second{
+            display: flex;
+        }
     }
     @include desktop{
         width: 1280px; 
@@ -52,6 +58,9 @@
             margin-left: 40px;
         }  
         >.header__button{
+            display: flex;
+        }
+        >.header__button-second{
             display: flex;
         }
         >.button__mobile__menu{
@@ -83,46 +92,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;  
+    gap: 16px;  
 }
 .nav__link{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 16px;
+    height: 43px;
     color: var(--white);
 }
 .nav__link:hover,
 .nav__link:focus{
-    color: var(--grey-more-light);
-}
-.header__button{
-    // display: flex;
-    // border: none;
-    // border-radius: 24px;
-    // padding: 16px 24px;
+    border-radius: 24px;
     background-color: var(--white);
-    // align-items: center;
-    // font-family: 'Fixel Display', sans-serif;
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 120%;
+    color: var(--black);
+}
+
+.header__button{
+    background-color: var(--white);
     color: var(--black);
     margin-left: 32px;
 }
-// .header__button:hover,
-// .header__button:focus{
-//     cursor: pointer;
-// }
-
+.header__button:hover,
+.header__button:focus{
+    background-color: var(--black);
+    color: var(--white);
+}
 .header__second{
-    background-color: var(--white);
-    
+    background-color: var(--white);  
 }
 .nav__link-second{
     color: var(--black);
 }
+.nav__link-second:hover,
+.nav__link-second:focus{
+    border-radius: 24px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .header__button-second{
     background-color: var(--grey-more-light);
+}
+.header__button-second:hover,
+.header__button-second:focus{
+    background-color: var(--black);
+    color: var(--white);
 }
 .active__link{
     border-radius: 24px;
