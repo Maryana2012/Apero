@@ -496,7 +496,7 @@
 
 
     <section class="container container__blue">
-        <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
+        <!-- <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn"> -->
         <!-- //цей сервіс для відправки заявок, потрібно переєструвати на електронну адресу когось із отримувачів Аперо -->
         <form name="question-form" class="question__form" action="https://formspree.io/f/xvoedapk" method="POST"> 
          <h2 class="title question__title">маєте запитання чи </br>пропозиції?</h2>
@@ -619,7 +619,26 @@
 
      </div>
   </div>
-  
+
+  <div class="backdrop backdrop__mobile is-hidden">
+    <div class="menu__modal">
+      <button class="mobile__button-close modal-close">
+        <svg width="30" height="30">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+       </button>
+      <ul class="nav__list-mobile">
+        <li class="list"><a href="./index.html" class="link menu__link text">Головна</a></li>
+        <li class="list"><a href="./about.html" class="link menu__link text">Про нас</a></li>
+        <li class="list"><a href="./products.html" class="link menu__link text">Продукція</a></li>
+        <li class="list"><a href="./partner.html" class="link menu__link text">Партнерам</a></li>
+        <li class="list"><a href="./contacts.html" class="link menu__link text">Контакти</a></li>
+    </ul>
+    <button type="button" class="button__primary menu__button button__form modal-open">Отримати пропозицію</button>
+
+    </div>
+    
+ </div>
    
    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
    <!-- <script type="module" src="./js/swiper.js"></script> -->
@@ -630,6 +649,6 @@
    <script type="module" src="./js/fixed-header.js"></script>
    <script type="module" src="./js/button-form.js"></script>
    <script type="module" src="./js/form-button-send.js"></script>
-   <script type="module" src="./js/header-mobile.js"></script>
+   <script type="module" src="./js/header-menu.js"></script>
   </body>
 </html>
