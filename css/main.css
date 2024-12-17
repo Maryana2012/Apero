@@ -2046,10 +2046,13 @@ button:focus {
   bottom: 50%;
   transform: translate(-50%, 10%);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .product__list-image {
+    transform: translate(-50%, 35%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .product__list-image {
-    left: 50%;
-    bottom: 50%;
     transform: translate(-50%, 30%);
   }
 }
@@ -2061,10 +2064,13 @@ button:focus {
   bottom: 50%;
   transform: translate(-45%, 10%);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image__snack {
+    transform: translate(-45%, 40%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image__snack {
-    left: 50%;
-    bottom: 50%;
     transform: translate(-45%, 30%);
   }
 }
@@ -2076,10 +2082,13 @@ button:focus {
   bottom: 50%;
   transform: translate(-50%);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image__baget {
+    transform: translate(-50%, 35%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image__baget {
-    left: 50%;
-    bottom: 50%;
     transform: translate(-50%, 30%);
   }
 }
@@ -2091,10 +2100,13 @@ button:focus {
   bottom: 50%;
   transform: translate(-50%, 5%);
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image__sweet__corn {
+    transform: translate(-50%, 35%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image__sweet__corn {
-    left: 50%;
-    bottom: 50%;
     transform: translate(-50%, 30%);
   }
 }
@@ -2107,10 +2119,13 @@ button:focus {
   transform: translate(35%, 21%);
   rotate: 90deg;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image_corn__pods {
+    transform: translate(75%, 19%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image_corn__pods {
-    left: 50%;
-    bottom: 50%;
     transform: translate(80%, 20%);
   }
 }
@@ -2123,10 +2138,13 @@ button:focus {
   transform: translate(30%, 38%);
   rotate: 90deg;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image_corn__pods__milk {
+    transform: translate(80%, 19%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image_corn__pods__milk {
-    left: 50%;
-    bottom: 50%;
     transform: translate(80%, 20%);
   }
 }
@@ -2139,10 +2157,13 @@ button:focus {
   transform: translate(20%, 40%);
   rotate: 90deg;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .image_corn__pods__choco {
+    transform: translate(38%, 46%);
+  }
+}
 @media screen and (min-width: 1440px) {
   .image_corn__pods__choco {
-    left: 50%;
-    bottom: 50%;
     transform: translate(40%, 47%);
   }
 }
@@ -2651,7 +2672,12 @@ button:focus {
   transition-property: opacity visibility;
   transition-duration: 250ms;
   transition-timing-function: linear;
-  overflow: hidden;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 1440px) {
+  .backdrop {
+    overflow: hidden;
+  }
 }
 
 .is-hidden {
@@ -2664,28 +2690,53 @@ button:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-49.5%, -10%);
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -25%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+  }
 }
 
 .modal__container {
   position: relative;
   width: 630px;
 }
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .modal__container {
+    width: 600px;
+  }
+}
 
 .button__close {
   position: absolute;
   z-index: 10;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 160px;
   padding: 0;
   width: 24px;
   height: 24px;
   border: none;
   background-color: var(--white);
 }
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .button__close {
+    top: 15px;
+    right: -25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button__close {
+    top: 20px;
+    right: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

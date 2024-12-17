@@ -9,7 +9,11 @@
     transition-property: opacity visibility;
     transition-duration: 250ms;
     transition-timing-function: linear;
-    overflow: hidden;
+    overflow-y: scroll;
+    @include desktop{
+        overflow: hidden;
+
+    }
 }
 .is-hidden {
     opacity: 0;
@@ -21,24 +25,24 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,50%) ;
-    // @include tablet{
-    //     top: 300px;
-    //     left: 50%;
-    //     transform: translate(-50%) ;
-    // }
-    // @include desktop{
-    //     top: 300px;
-    //     left: 50%;
-    //     transform: translate(-50%) ;
-    // }
+    transform: translate(-49.5%,-10%) ;
+    @include tablet{
+        top: 50%;
+        left: 50%;
+        transform: translate(-53%,-25%) ;
+    }
+    @include desktop{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-48%) ;
+    }
 }
 .modal__container{
     position: relative;
     width: 630px;
-    // @include tablet{
-    //     width: 600px;
-    // }
+    @include tablet{
+        width: 600px;
+    }
     // @include desktop{
     //     width: 630px;
     // }
@@ -46,18 +50,26 @@
 .button__close{
     position: absolute;
     z-index: 10;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 160px;
     padding: 0;
     width: 24px;
     height: 24px;
     border: none;
     background-color: var(--white);
+    @include tablet{
+        top: 15px;
+        right: -25px; 
+    }
+    @include desktop {
+        top: 20px;
+        right: 20px;
+    }
     
 }
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
   
-}
+// }
