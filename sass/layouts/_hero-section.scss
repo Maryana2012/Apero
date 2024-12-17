@@ -4,18 +4,10 @@
 .hero__section-container{
     position: relative;
     display: flex;
-    // flex-direction: column;
     min-width: 0;
     margin: 0 auto;
 }
-// .hero__container{
-//     display: flex;
-//     align-items: center;
-//     margin: 0 auto;
-//     width: 1440px;
-//     margin-top: 119px;
-//     padding: 0 0 88px 0;
-// }
+
 .hero__container{
     display: flex;
     flex-direction: column;
@@ -51,34 +43,14 @@
 .hero__container-green{
     background-color: var(--green);
 }
-// .hero__text-container{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     justify-content: center;
-//     width: 800px;
-//     margin-left: 88px ;
-// }
+
 .hero__text-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    // padding: 0 16px ;
-    // width: 800px;
-    // margin-left: 88px ;
 }
-
-// .hero__title{
-    // font-family: var(--font-title);
-    // font-weight: 700;
-    // font-size: 72px;
-    // line-height: 120%;
-    // text-transform: uppercase;
-    // color: var(--white);
-    // margin-bottom: 10px;
-// }
 
 .hero__title{
     font-family: var(--font-title);
@@ -87,7 +59,6 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--white);
-    // margin-bottom: 10px;
     @include tablet{
         font-size: 64px;
         margin-bottom: 5px;
@@ -146,6 +117,18 @@
         padding: 8px 8px 8px 24px ;
     }
 }
+.hero__link:hover,
+.hero__link:focus{
+    border: 3px solid var(--light-grey);
+    background: var(--black);
+    color: var(--white);
+}
+// .hero__link:hover svg,
+// .hero__link:focus svg{
+//     fill: var(--white);
+//     color: var(--black);
+// }
+
 .hero__image-container{
     position: relative;
     margin-bottom: 54px;
@@ -154,31 +137,6 @@
     }
 
 }
-
-// .hero__image{
-//     position: absolute;
-//     z-index: 100;
-//     // width: 300px;
-//     // height: 300px;
-//     transform: translate(-15%, 5%) ;
-//     top: 0;
-//     left: 0;   
-//     border-radius: 100%;
-//     filter: blur(250px);
-
-//     @include tablet{
-//         // width: 400px;
-//         // height: 400px;
-//         transform: translate(-15%, 5%) ;
-//     }
-//     @include desktop{
-//         // width: 300px;
-//         // height: 300px ;
-//         transform: translate(-15%, -10%) ;
-//     }
-// }
-
-
 
 .hero__image-orange{
     background: radial-gradient(circle at center,  rgb(247, 211, 133) 0%, rgb(243, 149, 64) 92%);

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -33,12 +32,8 @@ h1 {
   display: none;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 html, body {
-  overflow-x: hidden; /* Забирає горизонтальний скролбар */
+  overflow-x: hidden;
 }
 
 .container {
@@ -160,23 +155,30 @@ html, body {
   }
 }
 
-.button {
+.button__primary {
   display: flex;
   border: none;
+  border-radius: 24px;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fixel Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.button__secondary {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
   border-radius: 32px;
   padding: 8px 8px 8px 24px;
-  align-items: center;
   font-family: "Fixel Display", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
-}
-
-button:hover,
-button:focus {
-  cursor: pointer;
-  color: var(--grey-more-light);
 }
 
 .button__image {
@@ -334,16 +336,7 @@ button:focus {
 }
 
 .header__button {
-  display: flex;
-  border: none;
-  border-radius: 24px;
-  padding: 16px 24px;
   background-color: var(--white);
-  align-items: center;
-  font-family: "Fixel Display", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 120%;
   color: var(--black);
   margin-left: 32px;
 }
@@ -509,6 +502,13 @@ button:focus {
     width: 316px;
     padding: 8px 8px 8px 24px;
   }
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  border: 3px solid var(--light-grey);
+  background: var(--black);
+  color: var(--white);
 }
 
 .hero__image-container {
@@ -763,6 +763,11 @@ button:focus {
   margin-bottom: 24px;
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
+  .advantages__item {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .advantages__item {
     gap: 20px;
   }
@@ -1141,9 +1146,8 @@ button:focus {
 .question__button {
   background-color: var(--black);
   width: 100%;
-  height: 56px;
   color: var(--white);
-  justify-content: center;
+  padding: 16px;
 }
 
 .question_image-popcorn {
@@ -1282,7 +1286,6 @@ button:focus {
 }
 
 .about__hero__button {
-  display: flex;
   justify-content: space-around;
   margin: 0 auto;
   width: 100%;
@@ -2422,9 +2425,7 @@ button:focus {
 .footer__button {
   width: 100%;
   margin-top: 24px;
-  font-weight: 500;
-  justify-content: center;
-  padding: 16px;
+  background-color: var(--grey-more-light);
 }
 
 .footer__conditions-item {

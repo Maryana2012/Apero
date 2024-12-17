@@ -39,7 +39,7 @@
          <use href="./images/symbol-defs.svg#icon-menu-mobile"></use>
        </svg>
      </button>
-      <button type="button" class="header__button header__button-second modal-open">Отримати пропозицію</button>
+      <button type="button" class="button__primary header__button-second modal-open">Отримати пропозицію</button>
 
     </div>
  </header>
@@ -51,7 +51,7 @@
         <div class="about__hero-block">
           <div class="about__hero__container">
             <p class="text about__text">провідний вітчизняний виробник високоякісної продукції із кукурудзи вирощеної в Україні</p>
-            <button class="button button__form about__hero__button modal-open">Стати партнером
+            <button class="button__secondary button__form about__hero__button modal-open">Стати партнером
               <svg width="40" height="40" class="hero-svg">
                 <use href="./images/symbol-defs.svg#icon-arrow-up-right"></use>
               </svg>
@@ -310,7 +310,7 @@
           <p class="about__product-text">подушечки та трубочки</p>
           <picture>
             <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1733049336/apero/about/twin-desktop-1x-min_r94gqe.png 1x,
-            https://res.cloudinary.com/ddtdtthqh/image/upload/v1733049336/apero/about/twin-desktop-1x-min_r94gqe.png 2x" 
+            https://res.cloudinary.com/ddtdtthqh/image/upload/v1733049336/apero/about/twin-desktop-2x-min_pp1b2a.png 2x" 
             media="(min-width: 1440px)" />
             <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1733049336/apero/about/twin-tablet-1x-min_enyipt.png 1x,
             https://res.cloudinary.com/ddtdtthqh/image/upload/v1733049337/apero/about/twin-tablet-2x-min_nlgfqs.png 2x" 
@@ -343,10 +343,22 @@
             <input class="question__input text" type="text" name="company" id="company" placeholder="Назва компанії">
             <textarea class="question__textarea text" name="comment" id="comment" cols="30" rows="10" placeholder="Напишіть щось"></textarea>
           </div>
-          <button class="button question__button " type="submit">Відправити заявку</button>
+          <button class="button__secondary question__button " type="submit">Відправити заявку</button>
         </form>
-        <img src="./images/question_milk.png" alt="milk" class="question_image-milk">
-        <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn">
+        <picture>
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/qustion-corn-desk-1x_pa5mli.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292477/apero/questions/qustion-corn-desk-2x_bshxqo.png 2x"
+          media="(min-width: 1440px)" />
+          <img class="question_image-popcorn" src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/qustion-corn-desk-1x_pa5mli.png" alt="corn ready">
+        </picture>
+        <picture>
+          <source srcset="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-1x_mx36ne.png 1x,
+          https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-2x_fuepul.png 2x"
+          media="(min-width: 1440px)" />
+          <img class="question_image-milk" src="https://res.cloudinary.com/ddtdtthqh/image/upload/v1732292476/apero/questions/question-puds-desk-1x_mx36ne.png" alt="milk puds">
+        </picture>
+        <!-- <img src="./images/question_milk.png" alt="milk" class="question_image-milk"> -->
+        <!-- <img src="./images/question_popcorn.png" alt="popcorn salt" class="question_image-popcorn"> -->
       </div>
     </section>
  </main>
@@ -399,7 +411,7 @@
       <div class="footer__information-item">
         <p class="subtitle white footer__question-subtitle">Маєте запитання чи пропозиції?</p>
         <p class="text white">Заповніть заявку і ми зв’яжемось з Вами </br>найближчим часом</p>
-        <button class="button footer__button modal-open">Заповнити заявку</button>
+        <button class="button__primary footer__button modal-open">Заповнити заявку</button>
       </div>
     </div>
 
@@ -433,7 +445,7 @@
           <input class="question__input text black" type="text" name="company" id="company" placeholder="Назва компанії">
           <textarea class="question__textarea text black" name="comment" id="comment" cols="30" rows="10" placeholder="Напишіть щось"></textarea>
         </div>
-        <button class="button question__button"  type="submit">Відправити заявку</button>
+        <button class="button__secondary question__button"  type="submit">Відправити заявку</button>
        
         
       </form>

@@ -6,6 +6,9 @@
     @include tablet{
         gap: 20px;
     }
+    @include desktop{
+        gap: 20px;
+    }
 }
 .advantages__list{
    width: 343px;
@@ -38,6 +41,7 @@
     }
 }
 .advantage__button{
+    // padding: 8px 8px 8px 24px;
     background-color: var(--black);
     color: var(--white);
     margin: 0 auto;
