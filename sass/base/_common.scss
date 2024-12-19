@@ -22,8 +22,10 @@ html, body {
         padding: 120px 48px;
     }
     @include desktop{
-        width: 1440px;
-        padding: 80px 80px;
+        width: 1360px;
+        // width: 1440px;
+        // padding: 160px 80px;
+        padding: 80px 40px;
     }
 }
 
