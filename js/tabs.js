@@ -3,10 +3,10 @@ const snacks = document.querySelectorAll('.snacks__list');
 const corn = document.querySelectorAll('.corn__list');
 const buds = document.querySelectorAll('.buds__list');
 const syharyky = document.querySelectorAll('.suharyky__list');
-console.log(syharyky);
+// console.log(syharyky);
 
 const bambuk = document.querySelectorAll('.bambuc__list');
-console.log(bambuk)
+// console.log(bambuk)
 
 const allButton = document.querySelector('.all');
 const popcornButton = document.querySelector('.popcorn');
@@ -15,8 +15,8 @@ const cornButton = document.querySelector('.corn');
 const budsButton = document.querySelector('.buds');
 const bambucButton = document.querySelector('.bambuc');
 const suharykyButton = document.querySelector('.suharyky');
-console.log(bambucButton);
-console.log(suharykyButton)
+// console.log(bambucButton);
+// console.log(suharykyButton)
 
 const handleClickPopcorn = () =>{
   popcorn.forEach(popcornItem => popcornItem.classList.remove('not-active'));
