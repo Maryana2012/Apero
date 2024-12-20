@@ -2,6 +2,7 @@
     text-align:start;
     margin-bottom: 32px;
     @include desktop{
+        width: 800px;
         margin-bottom: 40px;
     }
 }

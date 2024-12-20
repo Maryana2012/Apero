@@ -886,6 +886,7 @@ button:focus {
 }
 @media screen and (min-width: 1360px) {
   .statistic__title {
+    width: 800px;
     margin-bottom: 40px;
   }
 }
@@ -2379,7 +2380,7 @@ button:focus {
 }
 @media screen and (min-width: 1360px) {
   .footer__container {
-    width: 1440px;
+    width: 1360px;
     padding: 32px 80px;
   }
 }
@@ -2486,7 +2487,7 @@ button:focus {
 
 .footer__information-list {
   display: flex;
-  width: 270px;
+  width: 260px;
   align-items: center;
   margin-bottom: 16px;
 }
