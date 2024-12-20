@@ -7,7 +7,9 @@
     color: var(--white);
     margin-bottom: 16px;
     @include tablet{
+        display: flex;
         font-size: 32px;
+        justify-content: flex-start;
     }
     @include desktop{
         font-size: 36px;
@@ -15,26 +17,32 @@
 }
 .collection__text{
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 95px;
     color: var(--white);
     @include tablet{
-        width: 423px;
-        margin-bottom: 32px;
+        width: 410px;
+        margin-bottom: 80px;
+        // margin-bottom: 32px;
     }
     @include desktop{
-        width: 414px;
-        margin-bottom: 48px;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 400px;
+        margin-bottom: 78px;
+        text-align: center;
     }
 }
-.collection__text-small{
-    margin-bottom: 95px;
-    @include tablet{
-        margin-bottom: 80px;
-    }
-    @include desktop{
-        margin-bottom: 80px;
-    }
-}
+// .collection__text-small{
+//     margin-bottom: 95px;
+//     @include tablet{
+//         width: 410px;
+//         margin-bottom: 80px;
+//     }
+//     @include desktop{
+//         margin-bottom: 80px;
+//     }
+// }
 .collection__link{
     width: 160px;
     color: var(--white);
@@ -47,7 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-@include tablet{
+    @include tablet{
         flex-direction: column;
     }
     @include desktop{
@@ -58,25 +66,25 @@
     position: relative;
     display: flex;
     width: 100%;
-    // height: 360px;
     border-radius: 24px;
     margin-bottom: 24px;
     
 }
 .collection__block-blue{
     padding: 24px 16px;
-    text-align: start;
-    justify-content: center;
+    // text-align: start;
+    // justify-content: center;
+    // align-items: center;
     background: linear-gradient(153deg, #12a1de 0%, #c6ffd9 100%);
     @include tablet{
         width: 100%;
-        text-align: start;
+        // justify-content: start;
+        // text-align: start;
         padding: 38px;
     }
     @include desktop{
-        // width: 630px;
         width: 100%;
-        text-align: center;
+        // text-align: center;
         padding: 54px 24px;
     }
 }
@@ -90,7 +98,7 @@
     }
     @include desktop{
         width: 630px;
-        padding: 65px 24px;
+        padding: 24px 24px;
     }
 
 }
@@ -104,9 +112,20 @@
     }
     @include desktop{
         width: 630px;
-        padding: 65px 24px;
+        padding: 24px 24px;
     }
 
+}
+.text__yellow{
+    margin-bottom: 78px;
+    @include desktop{
+        display: flex;
+        // align-items: flex-start;
+        // justify-items: flex-start;
+        margin-bottom: 145px;
+        text-align: start;
+
+    }
 }
 .collection__block-orange{
     text-align: start;
@@ -145,12 +164,15 @@
     bottom: 0;
     right: 0;
 }
-// .image__snax-bacon{
-//     position: absolute;
-//     height: 380px;
-//     bottom: -20px;
-//     left: -40px;
-// }
+.image__twin__hero{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include tablet{
+        right: -7px;
+    }
+}
+
 .image__baget__white{
     position: absolute;
     transform: rotate(-10deg);

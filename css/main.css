@@ -509,6 +509,13 @@ button:focus {
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .hero__text {
+    width: 410px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .hero__text {
+    width: 410px;
     font-size: 18px;
   }
 }
@@ -585,7 +592,9 @@ button:focus {
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .collection__subtitle {
+    display: flex;
     font-size: 32px;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -596,33 +605,21 @@ button:focus {
 
 .collection__text {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 95px;
   color: var(--white);
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .collection__text {
-    width: 423px;
-    margin-bottom: 32px;
+    width: 410px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1360px) {
   .collection__text {
-    width: 414px;
-    margin-bottom: 48px;
-  }
-}
-
-.collection__text-small {
-  margin-bottom: 95px;
-}
-@media screen and (min-width: 744px) and (max-width: 1359px) {
-  .collection__text-small {
-    margin-bottom: 80px;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .collection__text-small {
-    margin-bottom: 80px;
+    display: flex;
+    width: 400px;
+    margin-bottom: 78px;
+    text-align: center;
   }
 }
 
@@ -660,21 +657,17 @@ button:focus {
 
 .collection__block-blue {
   padding: 24px 16px;
-  text-align: start;
-  justify-content: center;
   background: linear-gradient(153deg, #12a1de 0%, #c6ffd9 100%);
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .collection__block-blue {
     width: 100%;
-    text-align: start;
     padding: 38px;
   }
 }
 @media screen and (min-width: 1360px) {
   .collection__block-blue {
     width: 100%;
-    text-align: center;
     padding: 54px 24px;
   }
 }
@@ -693,7 +686,7 @@ button:focus {
 @media screen and (min-width: 1360px) {
   .collection__block-yellow {
     width: 630px;
-    padding: 65px 24px;
+    padding: 24px 24px;
   }
 }
 
@@ -711,7 +704,18 @@ button:focus {
 @media screen and (min-width: 1360px) {
   .collection__block-pink {
     width: 630px;
-    padding: 65px 24px;
+    padding: 24px 24px;
+  }
+}
+
+.text__yellow {
+  margin-bottom: 78px;
+}
+@media screen and (min-width: 1360px) {
+  .text__yellow {
+    display: flex;
+    margin-bottom: 145px;
+    text-align: start;
   }
 }
 
@@ -757,6 +761,17 @@ button:focus {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.image__twin__hero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (min-width: 744px) and (max-width: 1359px) {
+  .image__twin__hero {
+    right: -7px;
+  }
 }
 
 .image__baget__white {
