@@ -93,10 +93,14 @@
 }
 .footer__information-list{
     display: flex;
-    width: 100%;
+    // width: 100%;
+    width: 270px;
     align-items: center;
     margin-bottom: 16px;
     @include tablet{
+        width: 314px;
+    }
+    @include desktop{
         width: 314px;
     }
 }

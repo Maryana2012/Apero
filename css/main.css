@@ -2486,11 +2486,16 @@ button:focus {
 
 .footer__information-list {
   display: flex;
-  width: 100%;
+  width: 270px;
   align-items: center;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
+  .footer__information-list {
+    width: 314px;
+  }
+}
+@media screen and (min-width: 1360px) {
   .footer__information-list {
     width: 314px;
   }
