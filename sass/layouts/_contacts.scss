@@ -54,8 +54,16 @@
 }
 .contacts__list{
   display: flex;
+  width: 250px;
   align-items: center;
   margin-bottom: 16px;
+  @include tablet{
+    width: 270px;
+  }
+  @include desktop{
+    width:290px
+
+  }
 }
 .contacts__list:last-child{
         margin-bottom: 0;
