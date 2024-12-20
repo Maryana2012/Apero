@@ -628,6 +628,9 @@ button:focus {
 
 .collection__link {
   color: var(--white);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
 }
 
 .collection__container {
