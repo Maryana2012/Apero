@@ -33,24 +33,19 @@
         text-align: center;
     }
 }
-// .collection__text-small{
-//     margin-bottom: 95px;
-//     @include tablet{
-//         width: 410px;
-//         margin-bottom: 80px;
-//     }
-//     @include desktop{
-//         margin-bottom: 80px;
-//     }
-// }
 .collection__link{
     width: 160px;
     color: var(--white);
     background-color: transparent;
     border:  none;
-    border-bottom: 1px solid var(--white);
-  
+    border-bottom: 1px solid var(--white); 
 }
+.collection__link:hover,
+.collection__link:focus{
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
 .collection__container{
     display: flex;
     flex-direction: column;
