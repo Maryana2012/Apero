@@ -20,7 +20,9 @@
         width: 314px;
     }
     @include desktop{
-    width: 305px;
+        width: 343px;
+        height: 300px;
+
 }
 
 }
@@ -76,6 +78,7 @@
     @include desktop{
         margin-left: 233px;
         margin-bottom: 51px;
+        font-size: 20px;
     }
 }
 .statistic__block-info{
@@ -89,6 +92,13 @@
 .statistic__block-text{
     margin-left: 0;
     margin-bottom: 0;
+    font-size: 20px;
+    // @include tablet{
+    //     font-size: 20px;
+    // }
+    // @include desktop{
+    //     font-size: 20px;
+    // }
 }
 .statistic__white{
     color: var(--orange-dark);

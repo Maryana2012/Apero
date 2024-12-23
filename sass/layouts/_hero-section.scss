@@ -91,11 +91,11 @@
     font-size: 16px;
     @include tablet{
         width: 410px;
-        font-size: 18px;
+        font-size: 20px;
     }
     @include desktop{
-        width: 410px;
-        font-size: 18px;
+        width: 430px;
+        font-size: 24px;
     }
 }
 .hero__link{
@@ -137,22 +137,51 @@
     position: relative;
     margin-bottom: 54px;
     @include desktop{
-        margin-right: 188px;
+        // margin-right: 188px;
     }
 
 }
 
 .hero__image-orange{
+    position: absolute;
+    top: 0;
+    left: 0;
     background: radial-gradient(circle at center,  rgb(247, 211, 133) 0%, rgb(243, 149, 64) 92%);
+    filter: blur(250px);
+
 }
 
 .hero__image-violet{
     background: radial-gradient(circle at center,  rgb(221, 221, 219) 0%, rgb(106, 80, 138) 92%);
+    filter: blur(250px);
 }
 
 .hero__image-navy{
     background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(58, 74, 87) 92%);
+    filter: blur(250px);
 }
 .hero__image-green{
+    position: absolute;
+    // z-index: 100000;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
     background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(21, 167, 160) 92%);
+    filter: blur(250px);
 }
+// .hero__image{
+//     position: absolute;
+//     // top: 0;
+//     // left: 0;
+//     width: 214px;
+//     height: 307px;
+//     @include tablet{
+//         width: 389px;
+//         height: 558px;
+//     }
+//     @include desktop{
+//         width: 413px;
+//         height: 593px;
+//     }
+// }

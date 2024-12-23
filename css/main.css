@@ -510,13 +510,13 @@ button:focus {
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .hero__text {
     width: 410px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1360px) {
   .hero__text {
-    width: 410px;
-    font-size: 18px;
+    width: 430px;
+    font-size: 24px;
   }
 }
 
@@ -559,26 +559,32 @@ button:focus {
   position: relative;
   margin-bottom: 54px;
 }
-@media screen and (min-width: 1360px) {
-  .hero__image-container {
-    margin-right: 188px;
-  }
-}
-
 .hero__image-orange {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: radial-gradient(circle at center, rgb(247, 211, 133) 0%, rgb(243, 149, 64) 92%);
+  filter: blur(250px);
 }
 
 .hero__image-violet {
   background: radial-gradient(circle at center, rgb(221, 221, 219) 0%, rgb(106, 80, 138) 92%);
+  filter: blur(250px);
 }
 
 .hero__image-navy {
   background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(58, 74, 87) 92%);
+  filter: blur(250px);
 }
 
 .hero__image-green {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  left: 0;
   background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(21, 167, 160) 92%);
+  filter: blur(250px);
 }
 
 .collection__subtitle {
@@ -916,7 +922,8 @@ button:focus {
 }
 @media screen and (min-width: 1360px) {
   .statistic__block {
-    width: 305px;
+    width: 343px;
+    height: 300px;
   }
 }
 
@@ -987,6 +994,7 @@ button:focus {
   .statistic__block-number {
     margin-left: 233px;
     margin-bottom: 51px;
+    font-size: 20px;
   }
 }
 
@@ -1002,6 +1010,7 @@ button:focus {
 .statistic__block-text {
   margin-left: 0;
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .statistic__white {
@@ -1249,6 +1258,10 @@ button:focus {
     bottom: 200px;
     right: 0;
   }
+}
+
+.about__title__hidden {
+  display: none;
 }
 
 .about__hero-title {
