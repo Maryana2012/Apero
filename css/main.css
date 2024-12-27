@@ -1048,7 +1048,23 @@ button:focus {
 }
 
 .statistic__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  padding: 8px;
   color: var(--black);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--black);
+}
+
+.statistic__link:hover,
+.statistic__link:focus {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+  background-color: var(--black);
+  border-radius: 24px;
 }
 
 .partners__container {
@@ -1544,8 +1560,8 @@ button:focus {
 }
 @media screen and (min-width: 1360px) {
   .about__production-image {
-    top: 250px;
-    left: 500px;
+    top: 170px;
+    left: 450px;
   }
 }
 
