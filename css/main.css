@@ -2489,6 +2489,21 @@ button:focus {
   width: 100%;
   padding: 8px;
   align-items: center;
+  justify-content: center;
+}
+
+.footer__link-second {
+  justify-content: flex-start;
+}
+
+.footer__link-third {
+  width: 180px;
+  justify-content: flex-start;
+}
+
+.footer__link-four {
+  width: 210px;
+  justify-content: flex-start;
 }
 
 .footer__icon {

@@ -50,9 +50,13 @@
 .footer__list{
     display: flex;
     align-items: center;
+    // justify-content: center;
     // width: 165px;
     width: 197px;
     padding: 8px;
+    // @include desktop{
+    //     width: 197px; 
+    // }
 
 }
 .footer__item__container{
@@ -72,7 +76,18 @@
     width: 100%;
     padding: 8px;
     align-items: center;
-    // justify-content: center;
+    justify-content: center;
+}
+.footer__link-second{
+    justify-content: flex-start;
+}
+.footer__link-third{
+    width: 180px;
+    justify-content: flex-start;
+}
+.footer__link-four{
+    width: 210px;
+    justify-content: flex-start;
 }
 .footer__icon{
     margin-right: 16px;
