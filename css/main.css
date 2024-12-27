@@ -573,20 +573,33 @@ button:focus {
   position: relative;
   margin-bottom: 54px;
 }
+
 .hero__image-orange {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 300px;
+  height: 300px;
+  top: 200px;
+  left: 50px;
   background: radial-gradient(circle at center, rgb(247, 211, 133) 0%, rgb(243, 149, 64) 92%);
   filter: blur(250px);
 }
 
 .hero__image-violet {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 200px;
+  left: 50px;
   background: radial-gradient(circle at center, rgb(221, 221, 219) 0%, rgb(106, 80, 138) 92%);
   filter: blur(250px);
 }
 
 .hero__image-navy {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 200px;
+  left: 50px;
   background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(58, 74, 87) 92%);
   filter: blur(250px);
 }
@@ -595,8 +608,8 @@ button:focus {
   position: absolute;
   width: 300px;
   height: 300px;
-  top: 0;
-  left: 0;
+  top: 200px;
+  left: 50px;
   background: radial-gradient(circle at center, rgb(118, 214, 249) 0%, rgb(21, 167, 160) 92%);
   filter: blur(250px);
 }
@@ -1337,7 +1350,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 @media screen and (min-width: 1360px) {
   .about__hero-block {
@@ -1354,13 +1367,13 @@ button:focus {
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .about__hero__container {
     width: 380px;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1360px) {
   .about__hero__container {
     width: 380px;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 
@@ -1444,7 +1457,7 @@ button:focus {
 .about__production-container {
   position: relative;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -1504,7 +1517,7 @@ button:focus {
 .about__production__text-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1758,7 +1771,7 @@ button:focus {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
 }
 @media screen and (min-width: 1360px) {
@@ -2348,7 +2361,7 @@ button:focus {
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .product__list-text {
     font-size: 14px;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -2648,7 +2661,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: start;
+  align-items: flex-start;
 }
 @media screen and (min-width: 1360px) {
   .partner__block {
@@ -2669,7 +2682,7 @@ button:focus {
   width: 100%;
   padding: 32px 32px 32px 16px;
   border-bottom: 1px solid var(--grey-more-light);
-  align-items: start;
+  align-items: flex-start;
 }
 @media screen and (min-width: 1360px) {
   .advantage__list {
@@ -2936,8 +2949,8 @@ button:focus {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 309px;
   padding: 16px 16px;
   border-radius: 16px;
@@ -2951,7 +2964,7 @@ button:focus {
 .menu__link {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 16px;
   height: 24px;
   color: var(--black);
