@@ -1,0 +1,1 @@
+The Apero website was created using HTML, CSS, and JavaScript as a commercial project for a company specializing in snack production. It features five pages with smooth animations, a slick slider for enhanced visual appeal, and full responsiveness across various devices. For seamless form submissions, Formspree integration was implemented.
