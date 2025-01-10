@@ -949,8 +949,7 @@ button:focus {
 }
 @media screen and (min-width: 1360px) {
   .statistic__block {
-    width: 343px;
-    height: 300px;
+    width: 305px;
   }
 }
 
