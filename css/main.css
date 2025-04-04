@@ -1055,10 +1055,6 @@ button:focus {
   }
 }
 
-.statistic__text {
-  margin-bottom: 24px;
-}
-
 .statistic__link {
   display: flex;
   align-items: center;
@@ -1444,7 +1440,6 @@ button:focus {
 @media screen and (min-width: 1360px) {
   .about__statistic-block {
     margin-left: 650px;
-    margin-bottom: 80px;
   }
 }
 
