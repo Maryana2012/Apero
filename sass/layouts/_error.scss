@@ -1,0 +1,48 @@
+.error__section{
+    position: relative;
+    background: linear-gradient(137deg, #de4f12 12.37%, #f7d385 100%);
+
+}
+
+
+.error__title{
+    padding: 10px;
+    margin-bottom: 24px;
+    font-family: 'Fixel Display', sans-serif;
+    font-weight: 600;
+    font-size: 160px;
+    line-height: 87%;  
+    letter-spacing: 0.02em; 
+    text-align: center;
+    // background: url('https://res.cloudinary.com/ddtdtthqh/image/upload/v1746541688/apero/error/error_1x_mobile-min_fgtuc8.png');
+    background: linear-gradient(180deg, #fafafa 0%, rgba(250, 250, 250, 0.2) 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.error__link{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 32px;
+    padding: 4px 8px 4px 24px;
+    width: 100%;
+    background: var(--white);
+    height: 48px;
+    
+}
+.error__text{
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--black);
+    padding-right: 12px;
+}
+.error__img{
+    position: absolute;
+    top: 55px;
+    left: 165px;
+  
+}
