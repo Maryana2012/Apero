@@ -1136,20 +1136,20 @@ button:focus {
   width: 1600%;
   gap: 16px;
   margin-bottom: 16px;
-  animation: marquee__images-left 30s linear infinite alternate;
+  animation: marquee__images-left 20s linear infinite alternate;
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .partners__blocks-first {
     gap: 20px;
     margin-bottom: 20px;
-    animation: marquee__images-left 30s linear infinite alternate;
+    animation: marquee__images-left 20s linear infinite alternate;
   }
 }
 @media screen and (min-width: 1360px) {
   .partners__blocks-first {
     gap: 20px;
     margin-bottom: 20px;
-    animation: marquee__images-left 30s linear infinite alternate;
+    animation: marquee__images-left 20s linear infinite alternate;
   }
 }
 
@@ -1158,18 +1158,18 @@ button:focus {
   flex-direction: row;
   width: 1600%;
   gap: 16px;
-  animation: marquee__images-left 30s linear infinite alternate;
+  animation: marquee__images-left 20s linear infinite alternate;
 }
 @media screen and (min-width: 744px) and (max-width: 1359px) {
   .partners__blocks-second {
     gap: 20px;
-    animation: marquee__images-left 30s linear infinite alternate;
+    animation: marquee__images-left 20s linear infinite alternate;
   }
 }
 @media screen and (min-width: 1360px) {
   .partners__blocks-second {
     gap: 20px;
-    animation: marquee__images-left 30s linear infinite alternate;
+    animation: marquee__images-left 20s linear infinite alternate;
   }
 }
 
