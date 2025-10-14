@@ -2326,6 +2326,30 @@ button:focus {
   }
 }
 
+.image__corn__constructor {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 20%);
+}
+@media screen and (min-width: 744px) and (max-width: 1359px) {
+  .image__corn__constructor {
+    transform: translate(-50%, 39%);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .image__corn__constructor {
+    transform: translate(-50%, 36%);
+  }
+}
+
+.image__new__label {
+  position: absolute;
+  right: 20px;
+  bottom: 130px;
+}
+
 .product__list-subtitle {
   font-weight: 700;
   font-size: 14px;

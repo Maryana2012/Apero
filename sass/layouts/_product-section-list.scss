@@ -93,6 +93,9 @@
         transform: translate(-50%,30%);
     }
 }
+// .image__baget__new{
+
+// }
 .image__sweet__corn{
     display: block;
     position: absolute;
@@ -147,6 +150,26 @@
     @include desktop{
         transform: translate(33%,47%);
     }
+}
+.image__corn__constructor{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 20%);
+    
+    @include tablet {
+        transform: translate(-50%, 39%);
+    }
+    
+    @include desktop {
+            transform: translate(-50%, 36%);
+    }
+}
+.image__new__label{
+    position: absolute;
+    right: 20px;
+    bottom: 130px;
 }
 .product__list-subtitle{
     font-weight: 700;
