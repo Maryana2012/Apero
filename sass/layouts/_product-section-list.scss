@@ -93,9 +93,7 @@
         transform: translate(-50%,30%);
     }
 }
-// .image__baget__new{
 
-// }
 .image__sweet__corn{
     display: block;
     position: absolute;
@@ -168,8 +166,22 @@
 }
 .image__new__label{
     position: absolute;
-    right: 20px;
-    bottom: 130px;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    bottom: 165px;
+    @include tablet{
+        width: 35px;
+        height: 35px;
+        right: 40px;
+        bottom: 130px;
+    }
+    @include desktop{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 130px;
+    }
 }
 .product__list-subtitle{
     font-weight: 700;
